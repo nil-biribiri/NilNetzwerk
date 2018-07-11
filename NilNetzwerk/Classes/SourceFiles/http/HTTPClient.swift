@@ -12,10 +12,10 @@ import Foundation
 public class HTTPClient {
   
   static let shared = HTTPClient()
-  private let sessionDelegate: DefaultSessionDelegate = DefaultSessionDelegate()
-  private let urlSession: URLSession
+  fileprivate let sessionDelegate: DefaultSessionDelegate = DefaultSessionDelegate()
+  fileprivate let urlSession: URLSession
 
-  private(set) var requestsPool: [Request] = [Request]()
+  fileprivate(set) var requestsPool: [Request] = [Request]()
   var requestsToRetry: Queue<() -> Void> = Queue()
 
   /// Init method with possibility to customise the NSURLSession used for the requests.

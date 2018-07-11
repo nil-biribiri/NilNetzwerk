@@ -7,36 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098F9A47C080F4571712233E4A3EDFBC /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DDC0FADA8FEB22349DF9E776212CA /* HTTP.swift */; };
+		0FFFBEBDC8FD14505F83E1701B2867E6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73A1D73BD84EF64754FD0B1D0202CB /* Request.swift */; };
+		110FCADE020DE90F441E07DECF790A70 /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EEBF8B6C3C48667D3FF6BDB4B06B0 /* NetworkQueue.swift */; };
+		1297B8AC440FAE5B1B394441B7DA734D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8FC1D536C84A236B24E7E3DC2CA34 /* Constants.swift */; };
+		144EC4B8219EAC45C4CC44D5B1DF1F15 /* NilNetzwerk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9158CE5368CB749644BB316EB0F91CA6 /* NilNetzwerk-dummy.m */; };
 		155AC925171749F8FC987B40AC0820FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2C3D1EECD3D9642D417F476B00199456 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1C386E1526B76C9D9E779CE661030 /* HTTPClient.swift */; };
+		43166F10E789536AE1FD21F9BF4E9501 /* NetworkTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873CCA0B60A716F3416DD87699B7C5AE /* NetworkTransform.swift */; };
+		60527E82E06D93FCD082E567DD687217 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67A392470191AC4DE182B885858A63 /* Serializable.swift */; };
+		654AA25D16536D852948755CF4F5CBCE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FD2B3F4B57AC1C6557EF6A5219E3B7 /* Logger.swift */; };
+		6A2D7F0BF721BAE484823D51FC6C0D5D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B441105059BAECE68D7B91721175B /* Util.swift */; };
+		6CC4AE9527E28F54BF857D8984A8CA26 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4639E1033FD7D8B4E80DD12C527FD1B6 /* KeychainStorage.swift */; };
+		6E53131C0A9C2AA3229ED2CC49DB45A8 /* NilNetzwerk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFAB9B1275199FC9B618C69AC57F08DC /* NilNetzwerk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7859F8759B26AA8AC3D5D1BBF34C42FD /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDE7EBB1EA2BD2003492C29538B42C0 /* ServiceEndpoint.swift */; };
+		7AE32C770657C424C342DAACCFE028E7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EC68165DC4DC16A52935C7DC0807D /* Utils.swift */; };
+		819262ADB4FCAE1734431829B99B44AE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC57E654F4A7A68567C1974130D0FD /* Errors.swift */; };
+		858A35637E88E0ED6F9689D16A1696AF /* DictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E30CF8C499C8E2BB1598EF704CC80 /* DictionaryUtils.swift */; };
 		90299DCB731EE441B86E8480D520573A /* Pods-NilNetzwerk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */; };
-		999ACEAEE8831E2D4A368E869655A90C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A1B2C3F420F5B4C00073FEB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DB20F5B4C00073FEB6 /* Constants.swift */; };
-		A1B2C3F520F5B4C00073FEB6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DC20F5B4C00073FEB6 /* Logger.swift */; };
-		A1B2C3F620F5B4C00073FEB6 /* DateStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DD20F5B4C00073FEB6 /* DateStringUtils.swift */; };
-		A1B2C3F720F5B4C00073FEB6 /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DE20F5B4C00073FEB6 /* NetworkQueue.swift */; };
-		A1B2C3F820F5B4C00073FEB6 /* DictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DF20F5B4C00073FEB6 /* DictionaryUtils.swift */; };
-		A1B2C3F920F5B4C00073FEB6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E020F5B4C00073FEB6 /* Utils.swift */; };
-		A1B2C3FA20F5B4C00073FEB6 /* ConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E220F5B4C00073FEB6 /* ConfigUtil.swift */; };
-		A1B2C3FB20F5B4C00073FEB6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E320F5B4C00073FEB6 /* Configuration.swift */; };
-		A1B2C3FC20F5B4C00073FEB6 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E520F5B4C00073FEB6 /* Serializable.swift */; };
-		A1B2C3FD20F5B4C00073FEB6 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E720F5B4C00073FEB6 /* KeychainStorage.swift */; };
-		A1B2C3FE20F5B4C00073FEB6 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E820F5B4C00073FEB6 /* SecureStorage.swift */; };
-		A1B2C3FF20F5B4C00073FEB6 /* DefaultSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EA20F5B4C00073FEB6 /* DefaultSessionDelegate.swift */; };
-		A1B2C40020F5B4C00073FEB6 /* NetworkTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EB20F5B4C00073FEB6 /* NetworkTransform.swift */; };
-		A1B2C40120F5B4C00073FEB6 /* SSLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EC20F5B4C00073FEB6 /* SSLUtil.swift */; };
-		A1B2C40220F5B4C00073FEB6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3ED20F5B4C00073FEB6 /* HTTPClient.swift */; };
-		A1B2C40320F5B4C00073FEB6 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EE20F5B4C00073FEB6 /* HTTP.swift */; };
-		A1B2C40420F5B4C00073FEB6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EF20F5B4C00073FEB6 /* Util.swift */; };
-		A1B2C40520F5B4C00073FEB6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F020F5B4C00073FEB6 /* Request.swift */; };
-		A1B2C40620F5B4C00073FEB6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F120F5B4C00073FEB6 /* Errors.swift */; };
-		A1B2C40720F5B4C00073FEB6 /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F220F5B4C00073FEB6 /* ServiceEndpoint.swift */; };
-		A1B2C40820F5B4C00073FEB6 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F320F5B4C00073FEB6 /* RequestGenerator.swift */; };
 		A570A28135A20BBA5F0BCD22639D67A2 /* Pods-NilNetzwerk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE9D5E0F43F710ED7927D0A7AB15F2 /* Pods-NilNetzwerk_Example-dummy.m */; };
-		A987605D871883891EE2E2F109AE13B6 /* NilNetzwerk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BEED01B869A642F2DD488289533B27B /* NilNetzwerk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC2EBB4214CC7B4247A36214B7D22DE2 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92978D9D7942D7D7AA50858C54C1F5 /* SecureStorage.swift */; };
 		B5001F76AEE0483E085154F5F57BA15C /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2E2C0419868E05ACE4AA2C11FD4B808 /* NilNetzwerk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5357EC6E78F4CB8CE3C54957E2FBEDDE /* NilNetzwerk-dummy.m */; };
+		BA73E8B5E606AB9B8D1798EE3FE7AF2F /* ConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B2E81F41B378513F3EF17D8BA29DE /* ConfigUtil.swift */; };
+		BA8AA39E0BE8F4401015D4FA3FE43B45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		CD484D19E8FCD7DD33D723E3D5EA2108 /* DateStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99F98CCBA2DD0232C47A0362897936 /* DateStringUtils.swift */; };
 		DE70937902361C7B4A460725686EDE44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F47575D45AF9D1D1FDEA2591E969FD1D /* SSLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850521E05BF617A5CF011773F3E471E /* SSLUtil.swift */; };
+		F49B2AA74D761EC4CA57910115FA6D33 /* DefaultSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F424FA33AAA3EC603BD9FEB36DB4C /* DefaultSessionDelegate.swift */; };
+		F602CC2C79F37CC2EC8BB125D55EEA2A /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A81DC3060E13F0C684F16E46D796F /* RequestGenerator.swift */; };
 		FC53D2D8F6BFEE40CC66224609AEFC02 /* Pods-NilNetzwerk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FBC43EAF9A9D520E57FFCA1E3AA227 /* Pods-NilNetzwerk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCEDF6CC11EE143778C312BDB59A9276 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CFE55E897FF6F50BFA63921186CF /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ACA16678B773A9115E9FA35A8F1D45F7;
+			remoteGlobalIDString = 0B3D8F7D96B3B003312B42B3A329C195;
 			remoteInfo = NilNetzwerk;
 		};
 /* End PBXContainerItemProxy section */
@@ -52,75 +52,75 @@
 /* Begin PBXFileReference section */
 		04A99DC806AC128029C25AED3654311D /* Pods-NilNetzwerk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NilNetzwerk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		053C9016DDE1ED0492E6B0FCBB55ACD3 /* Pods-NilNetzwerk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NilNetzwerk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		08E6FD79C88878D2FAFB0D4461C73787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0850521E05BF617A5CF011773F3E471E /* SSLUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSLUtil.swift; sourceTree = "<group>"; };
+		0C67A392470191AC4DE182B885858A63 /* Serializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		0CC38DE82D6E87F72ECB5044F3823829 /* Pods-NilNetzwerk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Example.release.xcconfig"; sourceTree = "<group>"; };
+		122F424FA33AAA3EC603BD9FEB36DB4C /* DefaultSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultSessionDelegate.swift; sourceTree = "<group>"; };
 		133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NilNetzwerk_Tests-umbrella.h"; sourceTree = "<group>"; };
 		17B5910DD59C3917C277CEFBBE8B5469 /* Pods-NilNetzwerk_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Example-frameworks.sh"; sourceTree = "<group>"; };
 		17E3F1B353689B9A7A7D4964DD8BBB6B /* Pods-NilNetzwerk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NilNetzwerk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		202DF6A673880F02178985BA090AE074 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1B0EEBF8B6C3C48667D3FF6BDB4B06B0 /* NetworkQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
 		29645E4D183C727F3E6F7104A17A82CE /* Pods-NilNetzwerk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NilNetzwerk.xcconfig; sourceTree = "<group>"; };
-		2BEED01B869A642F2DD488289533B27B /* NilNetzwerk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NilNetzwerk-umbrella.h"; sourceTree = "<group>"; };
 		2FC09E20DD1EB4E7BBE2DDEB64899DCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39CF824A8A673952179F1CFFC1FC37C3 /* Pods-NilNetzwerk_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Example-resources.sh"; sourceTree = "<group>"; };
+		39D8FC1D536C84A236B24E7E3DC2CA34 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D0A6E54FD8B11FDBDE4EA128A1FFB5E /* Pods-NilNetzwerk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NilNetzwerk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		41DA61616483F002F0E0F227F0426FBA /* NilNetzwerk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = NilNetzwerk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3EDE7EBB1EA2BD2003492C29538B42C0 /* ServiceEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
+		3F73A1D73BD84EF64754FD0B1D0202CB /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		433ACA8CF112AE50DBF98356FB35A2F8 /* NilNetzwerk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NilNetzwerk.modulemap; sourceTree = "<group>"; };
+		442A81DC3060E13F0C684F16E46D796F /* RequestGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		4639E1033FD7D8B4E80DD12C527FD1B6 /* KeychainStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		4B09209CC5A77CBAB63CEAF777D85FD3 /* Pods-NilNetzwerk_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Tests-resources.sh"; sourceTree = "<group>"; };
-		5357EC6E78F4CB8CE3C54957E2FBEDDE /* NilNetzwerk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NilNetzwerk-dummy.m"; sourceTree = "<group>"; };
-		5750732078058FBF3B3918B0B210554E /* NilNetzwerk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NilNetzwerk-prefix.pch"; sourceTree = "<group>"; };
+		56FD2B3F4B57AC1C6557EF6A5219E3B7 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		59FDBCAF3DAFF7B2301BCFD4A58F4188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NilNetzwerk_Tests-dummy.m"; sourceTree = "<group>"; };
-		68F7A28B77D7676A3F00827117DA099E /* NilNetzwerk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NilNetzwerk.modulemap; sourceTree = "<group>"; };
+		60821312A89F14F928A2D85759E97504 /* NilNetzwerk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NilNetzwerk.xcconfig; sourceTree = "<group>"; };
+		637AD6DA2E3F23A21A84E060606235B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		72EE9D5E0F43F710ED7927D0A7AB15F2 /* Pods-NilNetzwerk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NilNetzwerk_Example-dummy.m"; sourceTree = "<group>"; };
 		756F0C58F8A5A85B44B55F4C2C967874 /* Pods-NilNetzwerk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NilNetzwerk_Tests.modulemap"; sourceTree = "<group>"; };
+		77AC57E654F4A7A68567C1974130D0FD /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		7E7B2E81F41B378513F3EF17D8BA29DE /* ConfigUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConfigUtil.swift; sourceTree = "<group>"; };
+		8739FEA6A9DF1EBFC93D499A9D6131FB /* NilNetzwerk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NilNetzwerk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		873CCA0B60A716F3416DD87699B7C5AE /* NetworkTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkTransform.swift; sourceTree = "<group>"; };
+		890DDC0FADA8FEB22349DF9E776212CA /* HTTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		8A30D755BC5CCADE7C978584C8884199 /* Pods-NilNetzwerk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NilNetzwerk_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E3FBB2A2509374413552AE50BD14DAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A1B2C3DB20F5B4C00073FEB6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A1B2C3DC20F5B4C00073FEB6 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		A1B2C3DD20F5B4C00073FEB6 /* DateStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateStringUtils.swift; sourceTree = "<group>"; };
-		A1B2C3DE20F5B4C00073FEB6 /* NetworkQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
-		A1B2C3DF20F5B4C00073FEB6 /* DictionaryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryUtils.swift; sourceTree = "<group>"; };
-		A1B2C3E020F5B4C00073FEB6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		A1B2C3E220F5B4C00073FEB6 /* ConfigUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigUtil.swift; sourceTree = "<group>"; };
-		A1B2C3E320F5B4C00073FEB6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		A1B2C3E520F5B4C00073FEB6 /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
-		A1B2C3E720F5B4C00073FEB6 /* KeychainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
-		A1B2C3E820F5B4C00073FEB6 /* SecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
-		A1B2C3EA20F5B4C00073FEB6 /* DefaultSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSessionDelegate.swift; sourceTree = "<group>"; };
-		A1B2C3EB20F5B4C00073FEB6 /* NetworkTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTransform.swift; sourceTree = "<group>"; };
-		A1B2C3EC20F5B4C00073FEB6 /* SSLUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLUtil.swift; sourceTree = "<group>"; };
-		A1B2C3ED20F5B4C00073FEB6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		A1B2C3EE20F5B4C00073FEB6 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
-		A1B2C3EF20F5B4C00073FEB6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		A1B2C3F020F5B4C00073FEB6 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		A1B2C3F120F5B4C00073FEB6 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		A1B2C3F220F5B4C00073FEB6 /* ServiceEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
-		A1B2C3F320F5B4C00073FEB6 /* RequestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		8B1EC68165DC4DC16A52935C7DC0807D /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9158CE5368CB749644BB316EB0F91CA6 /* NilNetzwerk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NilNetzwerk-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		999E30CF8C499C8E2BB1598EF704CC80 /* DictionaryUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryUtils.swift; sourceTree = "<group>"; };
+		ABECFA38CAFF036C120D29B35DC97C27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B122E495202330369DC4116DC06A4AAF /* Pods-NilNetzwerk_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B5FBC43EAF9A9D520E57FFCA1E3AA227 /* Pods-NilNetzwerk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NilNetzwerk_Example-umbrella.h"; sourceTree = "<group>"; };
+		BF07CFE55E897FF6F50BFA63921186CF /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CF99F98CCBA2DD0232C47A0362897936 /* DateStringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateStringUtils.swift; sourceTree = "<group>"; };
 		D0E1310913D68743AB88FF46AF0D71FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D1C386E1526B76C9D9E779CE661030 /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NilNetzwerk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NilNetzwerk_Tests.framework; path = "Pods-NilNetzwerk_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B9B55568FC3DD5463C19238187501F /* Pods-NilNetzwerk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NilNetzwerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBD65B038FDA553BE682A07D22A90868 /* Pods_NilNetzwerk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NilNetzwerk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NilNetzwerk.framework; path = NilNetzwerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAB9B1275199FC9B618C69AC57F08DC /* NilNetzwerk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NilNetzwerk-umbrella.h"; sourceTree = "<group>"; };
+		E87B441105059BAECE68D7B91721175B /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F57E0300F9DF5DAE698101E64ECA59CC /* NilNetzwerk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NilNetzwerk-prefix.pch"; sourceTree = "<group>"; };
+		FBD65B038FDA553BE682A07D22A90868 /* Pods_NilNetzwerk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NilNetzwerk_Example.framework; path = "Pods-NilNetzwerk_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF92978D9D7942D7D7AA50858C54C1F5 /* SecureStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E9993F360CF55D7FFD9872F94168434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8AA39E0BE8F4401015D4FA3FE43B45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31DAB712DA074A008E1F33FB869E8E1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				155AC925171749F8FC987B40AC0820FF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39DCA40DC5C785CF471813C28B95D197 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				999ACEAEE8831E2D4A368E869655A90C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,14 +135,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CF43F35452F201605719A6B644F45E5 /* Pod */ = {
+		14FA27BCA4A6907B68F5C665D9832B59 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				202DF6A673880F02178985BA090AE074 /* LICENSE */,
-				41DA61616483F002F0E0F227F0426FBA /* NilNetzwerk.podspec */,
-				9E3FBB2A2509374413552AE50BD14DAC /* README.md */,
+				57AAAD6C77500213985EB3C3A6D34672 /* NilNetzwerk */,
 			);
-			name = Pod;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		350ABE43FE493FF923884666D1452582 /* serialization */ = {
+			isa = PBXGroup;
+			children = (
+				0C67A392470191AC4DE182B885858A63 /* Serializable.swift */,
+			);
+			name = serialization;
+			path = NilNetzwerk/Classes/SourceFiles/serialization;
+			sourceTree = "<group>";
+		};
+		3A65C748568AD385BFA885F975F35396 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				4639E1033FD7D8B4E80DD12C527FD1B6 /* KeychainStorage.swift */,
+				FF92978D9D7942D7D7AA50858C54C1F5 /* SecureStorage.swift */,
+			);
+			name = storage;
+			path = NilNetzwerk/Classes/SourceFiles/storage;
+			sourceTree = "<group>";
+		};
+		453E7B31DAC39408D69182ABB2536A2A /* http */ = {
+			isa = PBXGroup;
+			children = (
+				122F424FA33AAA3EC603BD9FEB36DB4C /* DefaultSessionDelegate.swift */,
+				77AC57E654F4A7A68567C1974130D0FD /* Errors.swift */,
+				890DDC0FADA8FEB22349DF9E776212CA /* HTTP.swift */,
+				D3D1C386E1526B76C9D9E779CE661030 /* HTTPClient.swift */,
+				873CCA0B60A716F3416DD87699B7C5AE /* NetworkTransform.swift */,
+				3F73A1D73BD84EF64754FD0B1D0202CB /* Request.swift */,
+				442A81DC3060E13F0C684F16E46D796F /* RequestGenerator.swift */,
+				3EDE7EBB1EA2BD2003492C29538B42C0 /* ServiceEndpoint.swift */,
+				0850521E05BF617A5CF011773F3E471E /* SSLUtil.swift */,
+				E87B441105059BAECE68D7B91721175B /* Util.swift */,
+			);
+			name = http;
+			path = NilNetzwerk/Classes/SourceFiles/http;
+			sourceTree = "<group>";
+		};
+		57AAAD6C77500213985EB3C3A6D34672 /* NilNetzwerk */ = {
+			isa = PBXGroup;
+			children = (
+				5B815D6E32CF85CB2FDFC34CA068A669 /* config */,
+				453E7B31DAC39408D69182ABB2536A2A /* http */,
+				BD53A35B5C26563E98F78CB00A07CB98 /* Pod */,
+				350ABE43FE493FF923884666D1452582 /* serialization */,
+				3A65C748568AD385BFA885F975F35396 /* storage */,
+				BA0CEA322840D7AE7A1D4E5841329251 /* Support Files */,
+				9DF64B73CF1734BACF83D4072475F40A /* util */,
+			);
+			name = NilNetzwerk;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5B815D6E32CF85CB2FDFC34CA068A669 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				BF07CFE55E897FF6F50BFA63921186CF /* Configuration.swift */,
+				7E7B2E81F41B378513F3EF17D8BA29DE /* ConfigUtil.swift */,
+			);
+			name = config;
+			path = NilNetzwerk/Classes/SourceFiles/config;
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -175,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				A775123252BCFA7F62CB4422526FECA0 /* Development Pods */,
+				14FA27BCA4A6907B68F5C665D9832B59 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				A9B8DF0C613E94CB695B47E489E3855E /* Products */,
 				ED21EEFF97A51F009AAA0DF5318EDF65 /* Targets Support Files */,
@@ -200,81 +260,18 @@
 			path = "Target Support Files/Pods-NilNetzwerk_Tests";
 			sourceTree = "<group>";
 		};
-		A1B2C3D920F5B4C00073FEB6 /* SourceFiles */ = {
+		9DF64B73CF1734BACF83D4072475F40A /* util */ = {
 			isa = PBXGroup;
 			children = (
-				A1B2C3DA20F5B4C00073FEB6 /* util */,
-				A1B2C3E120F5B4C00073FEB6 /* config */,
-				A1B2C3E420F5B4C00073FEB6 /* serialization */,
-				A1B2C3E620F5B4C00073FEB6 /* storage */,
-				A1B2C3E920F5B4C00073FEB6 /* http */,
+				39D8FC1D536C84A236B24E7E3DC2CA34 /* Constants.swift */,
+				CF99F98CCBA2DD0232C47A0362897936 /* DateStringUtils.swift */,
+				999E30CF8C499C8E2BB1598EF704CC80 /* DictionaryUtils.swift */,
+				56FD2B3F4B57AC1C6557EF6A5219E3B7 /* Logger.swift */,
+				1B0EEBF8B6C3C48667D3FF6BDB4B06B0 /* NetworkQueue.swift */,
+				8B1EC68165DC4DC16A52935C7DC0807D /* Utils.swift */,
 			);
-			name = SourceFiles;
-			path = NilNetzwerk/Classes/SourceFiles;
-			sourceTree = "<group>";
-		};
-		A1B2C3DA20F5B4C00073FEB6 /* util */ = {
-			isa = PBXGroup;
-			children = (
-				A1B2C3DB20F5B4C00073FEB6 /* Constants.swift */,
-				A1B2C3DC20F5B4C00073FEB6 /* Logger.swift */,
-				A1B2C3DD20F5B4C00073FEB6 /* DateStringUtils.swift */,
-				A1B2C3DE20F5B4C00073FEB6 /* NetworkQueue.swift */,
-				A1B2C3DF20F5B4C00073FEB6 /* DictionaryUtils.swift */,
-				A1B2C3E020F5B4C00073FEB6 /* Utils.swift */,
-			);
-			path = util;
-			sourceTree = "<group>";
-		};
-		A1B2C3E120F5B4C00073FEB6 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				A1B2C3E220F5B4C00073FEB6 /* ConfigUtil.swift */,
-				A1B2C3E320F5B4C00073FEB6 /* Configuration.swift */,
-			);
-			path = config;
-			sourceTree = "<group>";
-		};
-		A1B2C3E420F5B4C00073FEB6 /* serialization */ = {
-			isa = PBXGroup;
-			children = (
-				A1B2C3E520F5B4C00073FEB6 /* Serializable.swift */,
-			);
-			path = serialization;
-			sourceTree = "<group>";
-		};
-		A1B2C3E620F5B4C00073FEB6 /* storage */ = {
-			isa = PBXGroup;
-			children = (
-				A1B2C3E720F5B4C00073FEB6 /* KeychainStorage.swift */,
-				A1B2C3E820F5B4C00073FEB6 /* SecureStorage.swift */,
-			);
-			path = storage;
-			sourceTree = "<group>";
-		};
-		A1B2C3E920F5B4C00073FEB6 /* http */ = {
-			isa = PBXGroup;
-			children = (
-				A1B2C3EA20F5B4C00073FEB6 /* DefaultSessionDelegate.swift */,
-				A1B2C3EB20F5B4C00073FEB6 /* NetworkTransform.swift */,
-				A1B2C3EC20F5B4C00073FEB6 /* SSLUtil.swift */,
-				A1B2C3ED20F5B4C00073FEB6 /* HTTPClient.swift */,
-				A1B2C3EE20F5B4C00073FEB6 /* HTTP.swift */,
-				A1B2C3EF20F5B4C00073FEB6 /* Util.swift */,
-				A1B2C3F020F5B4C00073FEB6 /* Request.swift */,
-				A1B2C3F120F5B4C00073FEB6 /* Errors.swift */,
-				A1B2C3F220F5B4C00073FEB6 /* ServiceEndpoint.swift */,
-				A1B2C3F320F5B4C00073FEB6 /* RequestGenerator.swift */,
-			);
-			path = http;
-			sourceTree = "<group>";
-		};
-		A775123252BCFA7F62CB4422526FECA0 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8145D53AFCB3D191DC73AF64343853D /* NilNetzwerk */,
-			);
-			name = "Development Pods";
+			name = util;
+			path = NilNetzwerk/Classes/SourceFiles/util;
 			sourceTree = "<group>";
 		};
 		A9B8DF0C613E94CB695B47E489E3855E /* Products */ = {
@@ -287,15 +284,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8145D53AFCB3D191DC73AF64343853D /* NilNetzwerk */ = {
+		BA0CEA322840D7AE7A1D4E5841329251 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1B2C3D920F5B4C00073FEB6 /* SourceFiles */,
-				4CF43F35452F201605719A6B644F45E5 /* Pod */,
-				C3173427CE242A74FA6A79947C4AD177 /* Support Files */,
+				59FDBCAF3DAFF7B2301BCFD4A58F4188 /* Info.plist */,
+				433ACA8CF112AE50DBF98356FB35A2F8 /* NilNetzwerk.modulemap */,
+				60821312A89F14F928A2D85759E97504 /* NilNetzwerk.xcconfig */,
+				9158CE5368CB749644BB316EB0F91CA6 /* NilNetzwerk-dummy.m */,
+				F57E0300F9DF5DAE698101E64ECA59CC /* NilNetzwerk-prefix.pch */,
+				DFAB9B1275199FC9B618C69AC57F08DC /* NilNetzwerk-umbrella.h */,
 			);
-			name = NilNetzwerk;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NilNetzwerk";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -306,18 +306,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3173427CE242A74FA6A79947C4AD177 /* Support Files */ = {
+		BD53A35B5C26563E98F78CB00A07CB98 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				08E6FD79C88878D2FAFB0D4461C73787 /* Info.plist */,
-				68F7A28B77D7676A3F00827117DA099E /* NilNetzwerk.modulemap */,
-				2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */,
-				5357EC6E78F4CB8CE3C54957E2FBEDDE /* NilNetzwerk-dummy.m */,
-				5750732078058FBF3B3918B0B210554E /* NilNetzwerk-prefix.pch */,
-				2BEED01B869A642F2DD488289533B27B /* NilNetzwerk-umbrella.h */,
+				637AD6DA2E3F23A21A84E060606235B1 /* LICENSE */,
+				8739FEA6A9DF1EBFC93D499A9D6131FB /* NilNetzwerk.podspec */,
+				ABECFA38CAFF036C120D29B35DC97C27 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/NilNetzwerk";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		ED21EEFF97A51F009AAA0DF5318EDF65 /* Targets Support Files */ = {
@@ -332,19 +328,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1795EEA4FBDC11C7B3835B241816AE73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E53131C0A9C2AA3229ED2CC49DB45A8 /* NilNetzwerk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D71D537C740BE26670D8C59D587CCED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FC53D2D8F6BFEE40CC66224609AEFC02 /* Pods-NilNetzwerk_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84EE1C44BD8B105D7D4AF4D2D0BAC347 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A987605D871883891EE2E2F109AE13B6 /* NilNetzwerk-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +355,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0B3D8F7D96B3B003312B42B3A329C195 /* NilNetzwerk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8142864713767F2790B9F20B93713B18 /* Build configuration list for PBXNativeTarget "NilNetzwerk" */;
+			buildPhases = (
+				F12059C9BC398B4B26E030AA185BDEF8 /* Sources */,
+				1E9993F360CF55D7FFD9872F94168434 /* Frameworks */,
+				1795EEA4FBDC11C7B3835B241816AE73 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NilNetzwerk;
+			productName = NilNetzwerk;
+			productReference = D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		254166FA6C9CA9FE33B9897F9083DB75 /* Pods-NilNetzwerk_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6759F0E99A67B9A87A3D35B7FA6B185 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Example" */;
@@ -394,23 +407,6 @@
 			productReference = D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ACA16678B773A9115E9FA35A8F1D45F7 /* NilNetzwerk */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 686C7A5FFCE128E8C8F4151F2FEBA4EC /* Build configuration list for PBXNativeTarget "NilNetzwerk" */;
-			buildPhases = (
-				F0949B3239C1056AC53A21AEB24D2978 /* Sources */,
-				39DCA40DC5C785CF471813C28B95D197 /* Frameworks */,
-				84EE1C44BD8B105D7D4AF4D2D0BAC347 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NilNetzwerk;
-			productName = NilNetzwerk;
-			productReference = D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -432,7 +428,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACA16678B773A9115E9FA35A8F1D45F7 /* NilNetzwerk */,
+				0B3D8F7D96B3B003312B42B3A329C195 /* NilNetzwerk */,
 				254166FA6C9CA9FE33B9897F9083DB75 /* Pods-NilNetzwerk_Example */,
 				455040917864AC2FD2CFF43D39659C33 /* Pods-NilNetzwerk_Tests */,
 			);
@@ -456,32 +452,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0949B3239C1056AC53A21AEB24D2978 /* Sources */ = {
+		F12059C9BC398B4B26E030AA185BDEF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B2C40120F5B4C00073FEB6 /* SSLUtil.swift in Sources */,
-				A1B2C40420F5B4C00073FEB6 /* Util.swift in Sources */,
-				A1B2C3F720F5B4C00073FEB6 /* NetworkQueue.swift in Sources */,
-				D2E2C0419868E05ACE4AA2C11FD4B808 /* NilNetzwerk-dummy.m in Sources */,
-				A1B2C3FF20F5B4C00073FEB6 /* DefaultSessionDelegate.swift in Sources */,
-				A1B2C40820F5B4C00073FEB6 /* RequestGenerator.swift in Sources */,
-				A1B2C40020F5B4C00073FEB6 /* NetworkTransform.swift in Sources */,
-				A1B2C3F520F5B4C00073FEB6 /* Logger.swift in Sources */,
-				A1B2C40720F5B4C00073FEB6 /* ServiceEndpoint.swift in Sources */,
-				A1B2C3FB20F5B4C00073FEB6 /* Configuration.swift in Sources */,
-				A1B2C3F920F5B4C00073FEB6 /* Utils.swift in Sources */,
-				A1B2C3F620F5B4C00073FEB6 /* DateStringUtils.swift in Sources */,
-				A1B2C3FE20F5B4C00073FEB6 /* SecureStorage.swift in Sources */,
-				A1B2C40320F5B4C00073FEB6 /* HTTP.swift in Sources */,
-				A1B2C40520F5B4C00073FEB6 /* Request.swift in Sources */,
-				A1B2C40220F5B4C00073FEB6 /* HTTPClient.swift in Sources */,
-				A1B2C3FC20F5B4C00073FEB6 /* Serializable.swift in Sources */,
-				A1B2C3F420F5B4C00073FEB6 /* Constants.swift in Sources */,
-				A1B2C40620F5B4C00073FEB6 /* Errors.swift in Sources */,
-				A1B2C3FD20F5B4C00073FEB6 /* KeychainStorage.swift in Sources */,
-				A1B2C3F820F5B4C00073FEB6 /* DictionaryUtils.swift in Sources */,
-				A1B2C3FA20F5B4C00073FEB6 /* ConfigUtil.swift in Sources */,
+				FCEDF6CC11EE143778C312BDB59A9276 /* Configuration.swift in Sources */,
+				BA73E8B5E606AB9B8D1798EE3FE7AF2F /* ConfigUtil.swift in Sources */,
+				1297B8AC440FAE5B1B394441B7DA734D /* Constants.swift in Sources */,
+				CD484D19E8FCD7DD33D723E3D5EA2108 /* DateStringUtils.swift in Sources */,
+				F49B2AA74D761EC4CA57910115FA6D33 /* DefaultSessionDelegate.swift in Sources */,
+				858A35637E88E0ED6F9689D16A1696AF /* DictionaryUtils.swift in Sources */,
+				819262ADB4FCAE1734431829B99B44AE /* Errors.swift in Sources */,
+				098F9A47C080F4571712233E4A3EDFBC /* HTTP.swift in Sources */,
+				2C3D1EECD3D9642D417F476B00199456 /* HTTPClient.swift in Sources */,
+				6CC4AE9527E28F54BF857D8984A8CA26 /* KeychainStorage.swift in Sources */,
+				654AA25D16536D852948755CF4F5CBCE /* Logger.swift in Sources */,
+				110FCADE020DE90F441E07DECF790A70 /* NetworkQueue.swift in Sources */,
+				43166F10E789536AE1FD21F9BF4E9501 /* NetworkTransform.swift in Sources */,
+				144EC4B8219EAC45C4CC44D5B1DF1F15 /* NilNetzwerk-dummy.m in Sources */,
+				0FFFBEBDC8FD14505F83E1701B2867E6 /* Request.swift in Sources */,
+				F602CC2C79F37CC2EC8BB125D55EEA2A /* RequestGenerator.swift in Sources */,
+				AC2EBB4214CC7B4247A36214B7D22DE2 /* SecureStorage.swift in Sources */,
+				60527E82E06D93FCD082E567DD687217 /* Serializable.swift in Sources */,
+				7859F8759B26AA8AC3D5D1BBF34C42FD /* ServiceEndpoint.swift in Sources */,
+				F47575D45AF9D1D1FDEA2591E969FD1D /* SSLUtil.swift in Sources */,
+				6A2D7F0BF721BAE484823D51FC6C0D5D /* Util.swift in Sources */,
+				7AE32C770657C424C342DAACCFE028E7 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +487,7 @@
 		2166EB01764B84EC67B10B782D7DFC83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NilNetzwerk;
-			target = ACA16678B773A9115E9FA35A8F1D45F7 /* NilNetzwerk */;
+			target = 0B3D8F7D96B3B003312B42B3A329C195 /* NilNetzwerk */;
 			targetProxy = 3F9F06D6F250FBB5A2F1A332B4983DCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -628,6 +624,37 @@
 			};
 			name = Release;
 		};
+		77E3F34BFED011F6B1B58928D1B8E629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60821312A89F14F928A2D85759E97504 /* NilNetzwerk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
+				PRODUCT_NAME = NilNetzwerk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -686,38 +713,6 @@
 			};
 			name = Release;
 		};
-		93399A125B970830936493585944BD20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
-				PRODUCT_NAME = NilNetzwerk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A2D5DEF7F62E79A1936B720708110C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */;
@@ -749,6 +744,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		CEB545C639F43761903F96352BD9C081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60821312A89F14F928A2D85759E97504 /* NilNetzwerk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
+				PRODUCT_NAME = NilNetzwerk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		D3BA629D7B6F5B48BD21F5419475C5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -783,37 +810,6 @@
 			};
 			name = Release;
 		};
-		EFE39D4B3405BF556E438D4D2AA1397A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
-				PRODUCT_NAME = NilNetzwerk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -826,11 +822,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		686C7A5FFCE128E8C8F4151F2FEBA4EC /* Build configuration list for PBXNativeTarget "NilNetzwerk" */ = {
+		8142864713767F2790B9F20B93713B18 /* Build configuration list for PBXNativeTarget "NilNetzwerk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFE39D4B3405BF556E438D4D2AA1397A /* Debug */,
-				93399A125B970830936493585944BD20 /* Release */,
+				77E3F34BFED011F6B1B58928D1B8E629 /* Debug */,
+				CEB545C639F43761903F96352BD9C081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

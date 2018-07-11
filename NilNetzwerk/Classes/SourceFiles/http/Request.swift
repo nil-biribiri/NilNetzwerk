@@ -18,11 +18,11 @@ public enum HTTPMethod: String {
 /// All of its properties are immutable. 
 /// Different init methods are provided, with or without the ServiceEndpoint and RequestGenerator.
 public struct Request: Equatable {
-  private(set) var url: URL
-  private(set) var method: HTTPMethod
-  private(set) var parameters: Any?
-  private(set) var headerFields: [String: String] = [:]
-  private(set) var body: Data? = nil
+  fileprivate(set) var url: URL
+  fileprivate(set) var method: HTTPMethod
+  fileprivate(set) var parameters: Any?
+  fileprivate(set) var headerFields: [String: String] = [:]
+  fileprivate(set) var body: Data? = nil
   //    public let sslCredentials: SSLCredentials?
 
   public static func ==(l: Request, r: Request) -> Bool {
@@ -89,9 +89,9 @@ public struct Request: Equatable {
 
 }
 
-private extension Request {
+fileprivate extension Request {
 
-  private mutating func buildURLRequest(mutableRequest: MutableRequest,
+  mutating func buildURLRequest(mutableRequest: MutableRequest,
                                         requestUrl: URL) {
     if method == .GET && mutableRequest.queryString != nil {
       if let queryString = requestUrl.appendQueryString(queryString: mutableRequest.queryString!) {
@@ -105,7 +105,7 @@ private extension Request {
 
   }
 
-  private mutating func updateURLEncode(mutableRequest: inout MutableRequest) {
+  mutating func updateURLEncode(mutableRequest: inout MutableRequest) {
     if mutableRequest.parameters != nil && mutableRequest.method != .GET {
       if mutableRequest.headerFields["Content-Type"]?.contains("application/x-www-form-urlencoded") ?? false {
         if let params = mutableRequest.parameters as? [String: Any] {
