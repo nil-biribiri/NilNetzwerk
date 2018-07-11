@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NilNetzwerk_Example' do
+  pod 'NilNetzwerk', :path => '../'
+
+  target 'NilNetzwerk_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
