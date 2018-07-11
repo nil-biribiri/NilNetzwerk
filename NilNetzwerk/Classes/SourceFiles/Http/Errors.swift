@@ -1,12 +1,6 @@
-
 import Foundation
 
-// Response errors for some common status codes. Extend the enumeration in case an unsupported
-// code is needed.
-//
-// In case error message from the server needs to be supported, use enum with associated values.
-
-enum NetworkServiceError: Error {
+public enum NetworkServiceError: Error {
   case receiveErrorFromService(statusCode: Int, displayCode: String,  message: String)
   case unknownError(message: String)
   case urlError

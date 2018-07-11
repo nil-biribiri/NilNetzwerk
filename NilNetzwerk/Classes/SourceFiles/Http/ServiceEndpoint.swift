@@ -61,11 +61,5 @@ public extension ServiceEndpoint {
     }
   }
 
-  var baseURL: URL {
-    get {
-      let urlString = Configuration.sharedInstance[Constants.BaseURL] as? String
-      return URL(string: urlString!)!
-    }
-  }
 
 }

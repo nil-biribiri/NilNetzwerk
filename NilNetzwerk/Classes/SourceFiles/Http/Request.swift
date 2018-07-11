@@ -23,7 +23,6 @@ public struct Request: Equatable {
   fileprivate(set) var parameters: Any?
   fileprivate(set) var headerFields: [String: String] = [:]
   fileprivate(set) var body: Data? = nil
-  //    public let sslCredentials: SSLCredentials?
 
   public static func ==(l: Request, r: Request) -> Bool {
     return l.url.absoluteString == r.url.absoluteString
@@ -50,7 +49,6 @@ public struct Request: Equatable {
                     requestUrl: path)
 
     updateURLEncode(mutableRequest: &mutableRequest)
-    //        self.sslCredentials = mutableRequest.sslCredentials
   }
 
   public init(url: URL,
@@ -72,7 +70,6 @@ public struct Request: Equatable {
                     requestUrl: url)
 
     updateURLEncode(mutableRequest: &mutableRequest)
-    //        self.sslCredentials = mutableRequest.sslCredentials
   }
 
   public init(url: URL, method: HTTPMethod = .GET, queryParameters: [String: String] = [:]) {
@@ -107,7 +104,7 @@ fileprivate extension Request {
 
   mutating func updateURLEncode(mutableRequest: inout MutableRequest) {
     if mutableRequest.parameters != nil && mutableRequest.method != .GET {
-      if mutableRequest.headerFields["Content-Type"]?.contains("application/x-www-form-urlencoded") ?? false {
+      if mutableRequest.headerFields[Constants.ContentType]?.contains(Constants.XWwwForm) ?? false {
         if let params = mutableRequest.parameters as? [String: Any] {
           mutableRequest.parameters = params.urlEncodedQueryStringWithEncoding()
         }
@@ -131,7 +128,6 @@ public struct MutableRequest : RequestGenerator {
   var headerFields: [String: String]
   var body: Data?
   var queryString: String?
-  //    var sslCredentials: SSLCredentials?
 
   init(method: HTTPMethod) {
     self.method = method
@@ -147,7 +143,6 @@ public struct MutableRequest : RequestGenerator {
     self.parameters = parameters?.toDictionary
     if let param = parameters?.jsonData {
       self.body = param
-//      self.updateHTTPHeaderFields(headerFields: [Constants.ContentLength : "\(param.count)"])
     }
   }
 
@@ -157,10 +152,6 @@ public struct MutableRequest : RequestGenerator {
         params.urlEncodedQueryStringWithEncoding()
     }
   }
-
-  //    public mutating func updateSSLCredentials(sslCredentials: SSLCredentials) {
-  //        self.sslCredentials = sslCredentials
-  //    }
 
   public mutating func updateHTTPHeaderFields(headerFields: [String: String]?) {
     if let headerFields = headerFields {
@@ -182,12 +173,8 @@ public struct MutableRequest : RequestGenerator {
         self.body = string.data(using: .utf8, allowLossyConversion: true)!
       }
 
-      if let bodyToUse = self.body {
-//        self.updateHTTPHeaderFields(
-//          headerFields: [Constants.ContentLength : "\(bodyToUse.count)"])
-      }
     } catch {
-      //      Log.debug("Error creating body from parameters.")
+      Logger.log(message: "Error creating body from parameters.", event: .e)
     }
   }
 
@@ -202,7 +189,6 @@ extension Encodable {
   var jsonData: Data? {
     let encoder = JSONEncoder()
     encoder.outputFormatting  = .prettyPrinted
-//    encoder.keyEncodingStrategy = .convertToSnakeCase
     do {
       return try encoder.encode(self)
     } catch {

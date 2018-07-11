@@ -19,29 +19,19 @@ class NetworkBaseService: NSObject {
         return .failure(NetworkErrorResponse(message: "Invalid URL request."))
         
       case NetworkServiceError.noInternetConnection(let message):
-        return .failure(NetworkErrorResponse(message: message,
-                                             code: 10000,
-                                             displayCode: "APP10000"))
+        return .failure(NetworkErrorResponse(message: message))
         
       case NetworkServiceError.cannotGetErrorMessage:
-        return .failure(NetworkErrorResponse(message: "Unknown Error.",
-                                             code: 10001,
-                                             displayCode: "APP10001"))
+        return .failure(NetworkErrorResponse(message: "Unknown Error."))
         
       case NetworkServiceError.parseJSONError(let resultType, let errorMessage):
-        return .failure(NetworkErrorResponse(message: "ParseJSON \(resultType) Error: \(errorMessage).",
-          code: 10002,
-          displayCode: "APP10002"))
+        return .failure(NetworkErrorResponse(message: "ParseJSON \(resultType) Error: \(errorMessage)."))
 
       case NetworkServiceError.connectionTimeout(let message):
-        return .failure(NetworkErrorResponse(message: message,
-                                             code: 10003,
-                                             displayCode: "APP10003"))
+        return .failure(NetworkErrorResponse(message: message))
         
       case NetworkServiceError.unknownError(let message):
-        return .failure(NetworkErrorResponse(message: message,
-                                             code: 10004,
-                                             displayCode: "APP10004"))
+        return .failure(NetworkErrorResponse(message: message))
         
       default:
         return .failure(NetworkErrorResponse())

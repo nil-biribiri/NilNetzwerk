@@ -1,22 +1,45 @@
 import Foundation
-//import GRSecurity
+
+public protocol HTTPClientProtocol {
+  /// Adapter method that run before execute any request.
+  ///
+  /// - Parameter request: The given url request.
+  func adapter(request: inout Request)
+
+  /// Handle method that run if request is unauthorized.
+  ///
+  /// - Parameter request: The given url request.
+  /// - Parameter: completion that tell refresh token status.
+  func handleUnauthorized(request: Request, completion: @escaping (Bool) -> Result<Error>?)
+
+  /// Get error message from payload.
+  ///
+  /// - Parameter json: data response in json format.
+  /// - Returns: touple of statusCode and statusMessage.
+  func getErrorFromPayload(json: [String:AnyObject]??) -> (statusCode: String?, statusMessage: String?)?
+
+  /// Set network logger.
+  var enableLog: Bool {get set}
+}
 
 /// NSURLSession implementation of the HTTP protocol.
 ///
-/// The requests are done synchronously. The logic behind the sync requests is that we can easily 
+/// The requests are done synchronously. The logic behind the sync requests is that we can easily
 /// plug in RX extensions or promises to this implementation.
-/// If you want to use it directly (without RX extensions or promises), you should do it in a 
+/// If you want to use it directly (without RX extensions or promises), you should do it in a
 /// background thread.
 ///
 /// You can also use async requests with completion handler.
-public class HTTPClient {
-  
-  static let shared = HTTPClient()
-  fileprivate let sessionDelegate: DefaultSessionDelegate = DefaultSessionDelegate()
-  fileprivate let urlSession: URLSession
+open class NilNetzwerk: HTTPClientProtocol{
 
+  open class var shared: NilNetzwerk {
+    return NilNetzwerk()
+  }
+  public var requestsToRetry: Queue<() -> Void> = Queue()
+  public var enableLog: Bool = true
+
+  fileprivate let urlSession: URLSession
   fileprivate(set) var requestsPool: [Request] = [Request]()
-  var requestsToRetry: Queue<() -> Void> = Queue()
 
   /// Init method with possibility to customise the NSURLSession used for the requests.
   public init(urlSession: URLSession) {
@@ -27,25 +50,23 @@ public class HTTPClient {
   public init() {
     let configuration                           = URLSessionConfiguration.default
     configuration.requestCachePolicy            = .reloadIgnoringLocalAndRemoteCacheData
-    configuration.timeoutIntervalForRequest     = 60
-    configuration.timeoutIntervalForResource    = 60
+    configuration.timeoutIntervalForRequest     = 30
     configuration.urlCache                      = nil
 
     self.urlSession = URLSession(configuration: configuration,
-                                 delegate: sessionDelegate,
+                                 delegate: nil,
                                  delegateQueue: nil)
-    sessionDelegate.httpClient = self
   }
 
   /// Extracts the credentials for a given url request.
   ///
   /// - Parameter request: The given url request.
   /// - Returns: The ssl credentials for a given request, returns nil if no credentials were found.
-  func adapter(request: inout Request) {}
+  open func adapter(request: inout Request) {}
 
-  func handleUnauthorized(request: Request, completion: @escaping (Bool) -> Result<Error>?) {}
+  open func handleUnauthorized(request: Request, completion: @escaping (Bool) -> Result<Error>?) {}
 
-  func getErrorFromPayload(json: [String:AnyObject]??) -> (statusCode: String?, statusMessage: String?)? {
+  open func getErrorFromPayload(json: [String:AnyObject]??) -> (statusCode: String?, statusMessage: String?)? {
     guard let serializeJSON = json, let convertedJSON = serializeJSON else {
       return nil
     }
@@ -60,11 +81,11 @@ public class HTTPClient {
     }
     return nil
   }
-  
+
 }
 
 // MARK: - HTTP protocol
-extension HTTPClient: HTTP {
+extension NilNetzwerk: HTTP {
 
   enum ParseResult<_Result: Codable> {
     case success(_Result)
@@ -78,7 +99,7 @@ extension HTTPClient: HTTP {
     adapter(request: &mutableRequest)
     let urlRequest: URLRequest = URLRequest(request: mutableRequest)
     requestsPool.append(mutableRequest)
-    Logger.log(message: "Request: \(mutableRequest)", event: .d)
+    enableLog ? Logger.log(message: "Request: \(mutableRequest)", event: .d) : nil
 
     urlSession.sendSynchronousRequest(request: urlRequest) { [unowned self]
       data, urlResponse, error in
@@ -105,7 +126,7 @@ extension HTTPClient: HTTP {
     adapter(request: &mutableRequest)
     let urlRequest: URLRequest = URLRequest(request: mutableRequest)
     requestsPool.append(mutableRequest)
-    Logger.log(message: "Request: \(mutableRequest)", event: .d)
+    enableLog ? Logger.log(message: "Request: \(mutableRequest)", event: .d) : nil
 
     urlSession.dataTask(with: urlRequest) { (data, urlResponse, error) in
       self.removeFromPool(request: request)
@@ -143,7 +164,7 @@ extension HTTPClient: HTTP {
     if let data = data,
       let json  = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject],
       let logJson = json {
-      Logger.log(message: "Response: \(logJson.prettyPrint())", event: .d)
+      enableLog ? Logger.log(message: "Response: \(logJson.prettyPrint())", event: .d) : nil
     }
     if let error = error {
       let errorCode = (error as NSError).code
@@ -205,7 +226,6 @@ extension HTTPClient: HTTP {
     do {
       // Decode result to object
       let jsonDecoder = JSONDecoder()
-      //      jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
       if let data = data {
         let result  = try jsonDecoder.decode(_Result.self, from: data)
         return ParseResult.success(result)
@@ -232,7 +252,7 @@ extension HTTPClient: HTTP {
                                                            message: message)
       }
     }
-    return NetworkServiceError.unknownError(message: errorMessage)
+    return NetworkServiceError.cannotGetErrorMessage
   }
 
 }

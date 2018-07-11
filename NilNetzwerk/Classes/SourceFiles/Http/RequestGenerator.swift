@@ -1,5 +1,4 @@
 import Foundation
-//import GRSecurity
 
 /// Protocol defining methods for customising the request (mostly by manipulating the headers).
 ///
@@ -26,12 +25,6 @@ public protocol RequestGenerator {
   /// - Returns: The given request with the extended json support.
   func withJsonSupport(request: MutableRequest) -> MutableRequest
 
-  /// Adds SSL sredentials to the request.
-  ///
-  /// - Parameter request: An existing request which will be edited.
-  /// - Returns: The given request with the added ssl credentials.
-  func withSSLCredentials(request: MutableRequest) -> MutableRequest
-
   /// Generates the request. This is the place where it's decided which methods will be used to
   /// customise the request.
   ///
@@ -48,10 +41,6 @@ public protocol RequestGenerator {
 /// Default implementation of the RequestGenerator.
 public extension RequestGenerator {
 
-  public func configuration() -> Configuration {
-    return Configuration.sharedInstance
-  }
-
   public func request(withMethod method: HTTPMethod) -> MutableRequest {
     return MutableRequest(method: method)
   }
@@ -67,7 +56,7 @@ public extension RequestGenerator {
         let authorization = "\(Constants.BasicAuth) \(base64Data)"
         let authorizationHeader = [Constants.Authorization : authorization]
         request.updateHTTPHeaderFields(headerFields: authorizationHeader)
-        request.updateHTTPHeaderFields(headerFields: ["Content-Type" : "application/x-www-form-urlencoded; charset=utf-8"])
+        request.updateHTTPHeaderFields(headerFields: [Constants.ContentType : Constants.XWwwForm])
       }
     }
     return request
@@ -82,47 +71,6 @@ public extension RequestGenerator {
     return request
   }
 
-  func withSSLCredentials(request: MutableRequest) -> MutableRequest {
-//    var request = request
-    //        let anchors: [SecCertificate]? = anchorsFromConfiguration()
-    //        let p12Array: [Any]? = clientKeyStoresFromConfiguration()
-    //
-    //        if anchors != nil || p12Array != nil {
-    //            let sslCredentials = SSLCredentials(anchors: anchors, clientKeyStores: p12Array)
-    //            request.updateSSLCredentials(sslCredentials: sslCredentials)
-    //        }
-
-    return request
-  }
-
-  //    public func withSessionCookie(request: MutableRequest) -> MutableRequest {
-  //        var request = request
-  //
-  //        guard let cookies = HTTPCookieStorage.shared.cookies else {
-  //            return request
-  //        }
-  //
-  //        var cookieParts: (String, String) = ("", "")
-  //        for cookie in cookies {
-  //            let cookieString = "\(cookie.name)=\(cookie.value)"
-  //            if cookie.name == Constants.XSRFTokenKey {
-  //                request.updateHTTPHeaderFields(headerFields: [Constants.XSRFTokenHeader : cookie.value])
-  //                cookieParts.0 = cookieString
-  //            } else if cookie.name == Constants.JSessionID {
-  //                cookieParts.1 = cookieString
-  //            }
-  //        }
-  //
-  //        var cookieString = cookieParts.0
-  //        if !cookieParts.1.isEmpty {
-  //            cookieString += "; " + cookieParts.1
-  //        }
-  //
-  //        request.updateHTTPHeaderFields(headerFields: [Constants.CookieKey : cookieString])
-  //
-  //        return request
-  //    }
-
   public func generateRequest(withMethod method: HTTPMethod) -> MutableRequest {
     return request(withMethod: method) |> withJsonSupport
   }
@@ -135,9 +83,6 @@ public extension RequestGenerator {
     return nil
   }
 
-
 }
 
-struct StandardRequestGenerator: RequestGenerator {
-
-}
+struct StandardRequestGenerator: RequestGenerator {}

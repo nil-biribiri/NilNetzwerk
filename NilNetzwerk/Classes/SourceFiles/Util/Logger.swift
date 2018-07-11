@@ -34,9 +34,7 @@ class Logger {
   class func log(message: String, event: LogEvent,
                  fileName: String = #file, line: Int = #line,
                  column: Int = #column, funcName: String = #function) {
-    #if DEBUG // 7.
     print("\(Date().toString()) \(event.rawValue)[\(sourceFileName(filePath: fileName))]:\(line) \(funcName) -> \n\(message)")
-    #endif // 7.
   }
 }
 
