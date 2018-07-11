@@ -22,7 +22,7 @@ pod 'NilNetzwerk'
 
 ## Author
 
-nilc.nolan@gmail.com, nilc.nolan@gmail.com
+Nil-Biribiri, nilc.nolan@gmail.com
 
 ## License
 

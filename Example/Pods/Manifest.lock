@@ -1,0 +1,16 @@
+PODS:
+  - NilNetzwerk (0.1.0)
+
+DEPENDENCIES:
+  - NilNetzwerk (from `../`)
+
+EXTERNAL SOURCES:
+  NilNetzwerk:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NilNetzwerk: 4b32c318e372fdfa88ea5e02a28a671198eba917
+
+PODFILE CHECKSUM: ab90309ecbdd22a8a2410683399fc0c837af8287
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,22 @@
+{
+  "name": "NilNetzwerk",
+  "version": "0.1.0",
+  "summary": "A short description of NilNetzwerk.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nilc.nolan@gmail.com/NilNetzwerk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nilc.nolan@gmail.com": "nilc.nolan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nilc.nolan@gmail.com/NilNetzwerk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NilNetzwerk/Classes/**/*"
+}

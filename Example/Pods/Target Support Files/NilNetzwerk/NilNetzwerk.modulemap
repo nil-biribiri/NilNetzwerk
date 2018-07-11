@@ -1,0 +1,6 @@
+framework module NilNetzwerk {
+  umbrella header "NilNetzwerk-umbrella.h"
+
+  export *
+  module * { export * }
+}

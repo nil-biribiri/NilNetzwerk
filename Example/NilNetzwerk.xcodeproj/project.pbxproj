@@ -39,14 +39,14 @@
 		607FACE51AFB9204008FA782 /* NilNetzwerk_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NilNetzwerk_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8622DFBB55B7D791AB207076 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8622DFBB55B7D791AB207076 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		974122E3D54D8B6FA5CF7B90 /* Pods-NilNetzwerk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NilNetzwerk_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B5B417DD97FBFCCE575255BE /* Pods_NilNetzwerk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NilNetzwerk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD220BCF515D11E896559481 /* Pods-NilNetzwerk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NilNetzwerk_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NilNetzwerk_Example/Pods-NilNetzwerk_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB93283BAF68BBD25966A657 /* Pods-NilNetzwerk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NilNetzwerk_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NilNetzwerk_Example/Pods-NilNetzwerk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E584924CEA624DC32859D042 /* Pods_NilNetzwerk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NilNetzwerk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5FA10350DC1AA52A8EFBB64 /* NilNetzwerk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NilNetzwerk.podspec; path = ../NilNetzwerk.podspec; sourceTree = "<group>"; };
-		F29A5290110F1A41268C8C23 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E5FA10350DC1AA52A8EFBB64 /* NilNetzwerk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NilNetzwerk.podspec; path = ../NilNetzwerk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F29A5290110F1A41268C8C23 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

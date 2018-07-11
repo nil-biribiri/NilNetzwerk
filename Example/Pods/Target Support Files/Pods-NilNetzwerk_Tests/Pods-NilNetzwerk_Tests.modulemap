@@ -1,0 +1,6 @@
+framework module Pods_NilNetzwerk_Tests {
+  umbrella header "Pods-NilNetzwerk_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		155AC925171749F8FC987B40AC0820FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		873D570AB04544C4834544837166ABA7 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80B17FF5D80E77628D957989020BE1 /* ReplaceMe.swift */; };
+		90299DCB731EE441B86E8480D520573A /* Pods-NilNetzwerk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */; };
+		999ACEAEE8831E2D4A368E869655A90C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A570A28135A20BBA5F0BCD22639D67A2 /* Pods-NilNetzwerk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE9D5E0F43F710ED7927D0A7AB15F2 /* Pods-NilNetzwerk_Example-dummy.m */; };
+		A987605D871883891EE2E2F109AE13B6 /* NilNetzwerk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BEED01B869A642F2DD488289533B27B /* NilNetzwerk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5001F76AEE0483E085154F5F57BA15C /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E2C0419868E05ACE4AA2C11FD4B808 /* NilNetzwerk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5357EC6E78F4CB8CE3C54957E2FBEDDE /* NilNetzwerk-dummy.m */; };
+		DE70937902361C7B4A460725686EDE44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		FC53D2D8F6BFEE40CC66224609AEFC02 /* Pods-NilNetzwerk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FBC43EAF9A9D520E57FFCA1E3AA227 /* Pods-NilNetzwerk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F9F06D6F250FBB5A2F1A332B4983DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA16678B773A9115E9FA35A8F1D45F7;
+			remoteInfo = NilNetzwerk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A99DC806AC128029C25AED3654311D /* Pods-NilNetzwerk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NilNetzwerk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		053C9016DDE1ED0492E6B0FCBB55ACD3 /* Pods-NilNetzwerk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NilNetzwerk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		08E6FD79C88878D2FAFB0D4461C73787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC38DE82D6E87F72ECB5044F3823829 /* Pods-NilNetzwerk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Example.release.xcconfig"; sourceTree = "<group>"; };
+		133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NilNetzwerk_Tests-umbrella.h"; sourceTree = "<group>"; };
+		17B5910DD59C3917C277CEFBBE8B5469 /* Pods-NilNetzwerk_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Example-frameworks.sh"; sourceTree = "<group>"; };
+		17E3F1B353689B9A7A7D4964DD8BBB6B /* Pods-NilNetzwerk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NilNetzwerk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		202DF6A673880F02178985BA090AE074 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		29645E4D183C727F3E6F7104A17A82CE /* Pods-NilNetzwerk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NilNetzwerk.xcconfig; sourceTree = "<group>"; };
+		2BEED01B869A642F2DD488289533B27B /* NilNetzwerk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NilNetzwerk-umbrella.h"; sourceTree = "<group>"; };
+		2FC09E20DD1EB4E7BBE2DDEB64899DCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39CF824A8A673952179F1CFFC1FC37C3 /* Pods-NilNetzwerk_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Example-resources.sh"; sourceTree = "<group>"; };
+		3D0A6E54FD8B11FDBDE4EA128A1FFB5E /* Pods-NilNetzwerk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NilNetzwerk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41DA61616483F002F0E0F227F0426FBA /* NilNetzwerk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NilNetzwerk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4B09209CC5A77CBAB63CEAF777D85FD3 /* Pods-NilNetzwerk_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Tests-resources.sh"; sourceTree = "<group>"; };
+		5357EC6E78F4CB8CE3C54957E2FBEDDE /* NilNetzwerk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NilNetzwerk-dummy.m"; sourceTree = "<group>"; };
+		5750732078058FBF3B3918B0B210554E /* NilNetzwerk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NilNetzwerk-prefix.pch"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NilNetzwerk_Tests-dummy.m"; sourceTree = "<group>"; };
+		68F7A28B77D7676A3F00827117DA099E /* NilNetzwerk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NilNetzwerk.modulemap; sourceTree = "<group>"; };
+		72EE9D5E0F43F710ED7927D0A7AB15F2 /* Pods-NilNetzwerk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NilNetzwerk_Example-dummy.m"; sourceTree = "<group>"; };
+		756F0C58F8A5A85B44B55F4C2C967874 /* Pods-NilNetzwerk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NilNetzwerk_Tests.modulemap"; sourceTree = "<group>"; };
+		8A30D755BC5CCADE7C978584C8884199 /* Pods-NilNetzwerk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NilNetzwerk_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E3FBB2A2509374413552AE50BD14DAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B122E495202330369DC4116DC06A4AAF /* Pods-NilNetzwerk_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NilNetzwerk_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B5FBC43EAF9A9D520E57FFCA1E3AA227 /* Pods-NilNetzwerk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NilNetzwerk_Example-umbrella.h"; sourceTree = "<group>"; };
+		D0E1310913D68743AB88FF46AF0D71FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NilNetzwerk_Tests.framework; path = "Pods-NilNetzwerk_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B9B55568FC3DD5463C19238187501F /* Pods-NilNetzwerk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NilNetzwerk_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NilNetzwerk.framework; path = NilNetzwerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD65B038FDA553BE682A07D22A90868 /* Pods_NilNetzwerk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NilNetzwerk_Example.framework; path = "Pods-NilNetzwerk_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD80B17FF5D80E77628D957989020BE1 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NilNetzwerk/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31DAB712DA074A008E1F33FB869E8E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				155AC925171749F8FC987B40AC0820FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DCA40DC5C785CF471813C28B95D197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999ACEAEE8831E2D4A368E869655A90C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7CFD5FC3BF5D19523AA40E3BBD0D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE70937902361C7B4A460725686EDE44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CF43F35452F201605719A6B644F45E5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				202DF6A673880F02178985BA090AE074 /* LICENSE */,
+				41DA61616483F002F0E0F227F0426FBA /* NilNetzwerk.podspec */,
+				9E3FBB2A2509374413552AE50BD14DAC /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		751BD02C552EC14D436640F6EA2D97FF /* Pods-NilNetzwerk_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D0E1310913D68743AB88FF46AF0D71FA /* Info.plist */,
+				8A30D755BC5CCADE7C978584C8884199 /* Pods-NilNetzwerk_Example.modulemap */,
+				3D0A6E54FD8B11FDBDE4EA128A1FFB5E /* Pods-NilNetzwerk_Example-acknowledgements.markdown */,
+				17E3F1B353689B9A7A7D4964DD8BBB6B /* Pods-NilNetzwerk_Example-acknowledgements.plist */,
+				72EE9D5E0F43F710ED7927D0A7AB15F2 /* Pods-NilNetzwerk_Example-dummy.m */,
+				17B5910DD59C3917C277CEFBBE8B5469 /* Pods-NilNetzwerk_Example-frameworks.sh */,
+				39CF824A8A673952179F1CFFC1FC37C3 /* Pods-NilNetzwerk_Example-resources.sh */,
+				B5FBC43EAF9A9D520E57FFCA1E3AA227 /* Pods-NilNetzwerk_Example-umbrella.h */,
+				D8B9B55568FC3DD5463C19238187501F /* Pods-NilNetzwerk_Example.debug.xcconfig */,
+				0CC38DE82D6E87F72ECB5044F3823829 /* Pods-NilNetzwerk_Example.release.xcconfig */,
+			);
+			name = "Pods-NilNetzwerk_Example";
+			path = "Target Support Files/Pods-NilNetzwerk_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A775123252BCFA7F62CB4422526FECA0 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A9B8DF0C613E94CB695B47E489E3855E /* Products */,
+				ED21EEFF97A51F009AAA0DF5318EDF65 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		896CFDA54D1A4BE17CDC3ECF993061B5 /* Pods-NilNetzwerk_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2FC09E20DD1EB4E7BBE2DDEB64899DCD /* Info.plist */,
+				756F0C58F8A5A85B44B55F4C2C967874 /* Pods-NilNetzwerk_Tests.modulemap */,
+				04A99DC806AC128029C25AED3654311D /* Pods-NilNetzwerk_Tests-acknowledgements.markdown */,
+				053C9016DDE1ED0492E6B0FCBB55ACD3 /* Pods-NilNetzwerk_Tests-acknowledgements.plist */,
+				5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */,
+				B122E495202330369DC4116DC06A4AAF /* Pods-NilNetzwerk_Tests-frameworks.sh */,
+				4B09209CC5A77CBAB63CEAF777D85FD3 /* Pods-NilNetzwerk_Tests-resources.sh */,
+				133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */,
+				D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */,
+				29645E4D183C727F3E6F7104A17A82CE /* Pods-NilNetzwerk_Tests.release.xcconfig */,
+			);
+			name = "Pods-NilNetzwerk_Tests";
+			path = "Target Support Files/Pods-NilNetzwerk_Tests";
+			sourceTree = "<group>";
+		};
+		A775123252BCFA7F62CB4422526FECA0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8145D53AFCB3D191DC73AF64343853D /* NilNetzwerk */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A9B8DF0C613E94CB695B47E489E3855E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */,
+				FBD65B038FDA553BE682A07D22A90868 /* Pods_NilNetzwerk_Example.framework */,
+				D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8145D53AFCB3D191DC73AF64343853D /* NilNetzwerk */ = {
+			isa = PBXGroup;
+			children = (
+				FD80B17FF5D80E77628D957989020BE1 /* ReplaceMe.swift */,
+				4CF43F35452F201605719A6B644F45E5 /* Pod */,
+				C3173427CE242A74FA6A79947C4AD177 /* Support Files */,
+			);
+			name = NilNetzwerk;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3173427CE242A74FA6A79947C4AD177 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08E6FD79C88878D2FAFB0D4461C73787 /* Info.plist */,
+				68F7A28B77D7676A3F00827117DA099E /* NilNetzwerk.modulemap */,
+				2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */,
+				5357EC6E78F4CB8CE3C54957E2FBEDDE /* NilNetzwerk-dummy.m */,
+				5750732078058FBF3B3918B0B210554E /* NilNetzwerk-prefix.pch */,
+				2BEED01B869A642F2DD488289533B27B /* NilNetzwerk-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NilNetzwerk";
+			sourceTree = "<group>";
+		};
+		ED21EEFF97A51F009AAA0DF5318EDF65 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				751BD02C552EC14D436640F6EA2D97FF /* Pods-NilNetzwerk_Example */,
+				896CFDA54D1A4BE17CDC3ECF993061B5 /* Pods-NilNetzwerk_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D71D537C740BE26670D8C59D587CCED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53D2D8F6BFEE40CC66224609AEFC02 /* Pods-NilNetzwerk_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EE1C44BD8B105D7D4AF4D2D0BAC347 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A987605D871883891EE2E2F109AE13B6 /* NilNetzwerk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA631F09E9D948CCA974D64FA3E28EC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5001F76AEE0483E085154F5F57BA15C /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		254166FA6C9CA9FE33B9897F9083DB75 /* Pods-NilNetzwerk_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6759F0E99A67B9A87A3D35B7FA6B185 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Example" */;
+			buildPhases = (
+				76AAB86BA392ABBAF91290F086D65776 /* Sources */,
+				AE7CFD5FC3BF5D19523AA40E3BBD0D49 /* Frameworks */,
+				3D71D537C740BE26670D8C59D587CCED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2166EB01764B84EC67B10B782D7DFC83 /* PBXTargetDependency */,
+			);
+			name = "Pods-NilNetzwerk_Example";
+			productName = "Pods-NilNetzwerk_Example";
+			productReference = FBD65B038FDA553BE682A07D22A90868 /* Pods_NilNetzwerk_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		455040917864AC2FD2CFF43D39659C33 /* Pods-NilNetzwerk_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC4EDD46DA2CF735F8FEFFC878FA41F1 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Tests" */;
+			buildPhases = (
+				CD5FEFC2C11A38DE2CD8D58C54D7E0E7 /* Sources */,
+				31DAB712DA074A008E1F33FB869E8E1C /* Frameworks */,
+				AA631F09E9D948CCA974D64FA3E28EC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NilNetzwerk_Tests";
+			productName = "Pods-NilNetzwerk_Tests";
+			productReference = D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACA16678B773A9115E9FA35A8F1D45F7 /* NilNetzwerk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686C7A5FFCE128E8C8F4151F2FEBA4EC /* Build configuration list for PBXNativeTarget "NilNetzwerk" */;
+			buildPhases = (
+				F0949B3239C1056AC53A21AEB24D2978 /* Sources */,
+				39DCA40DC5C785CF471813C28B95D197 /* Frameworks */,
+				84EE1C44BD8B105D7D4AF4D2D0BAC347 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NilNetzwerk;
+			productName = NilNetzwerk;
+			productReference = D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A9B8DF0C613E94CB695B47E489E3855E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA16678B773A9115E9FA35A8F1D45F7 /* NilNetzwerk */,
+				254166FA6C9CA9FE33B9897F9083DB75 /* Pods-NilNetzwerk_Example */,
+				455040917864AC2FD2CFF43D39659C33 /* Pods-NilNetzwerk_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76AAB86BA392ABBAF91290F086D65776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A570A28135A20BBA5F0BCD22639D67A2 /* Pods-NilNetzwerk_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5FEFC2C11A38DE2CD8D58C54D7E0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90299DCB731EE441B86E8480D520573A /* Pods-NilNetzwerk_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0949B3239C1056AC53A21AEB24D2978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E2C0419868E05ACE4AA2C11FD4B808 /* NilNetzwerk-dummy.m in Sources */,
+				873D570AB04544C4834544837166ABA7 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2166EB01764B84EC67B10B782D7DFC83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NilNetzwerk;
+			target = ACA16678B773A9115E9FA35A8F1D45F7 /* NilNetzwerk */;
+			targetProxy = 3F9F06D6F250FBB5A2F1A332B4983DCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0940C4B1B4F5EB5474C9BE3F889BA277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B9B55568FC3DD5463C19238187501F /* Pods-NilNetzwerk_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Pods-NilNetzwerk_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NilNetzwerk_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		750E0E73BDF2852D9E3D35E6445B6882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC38DE82D6E87F72ECB5044F3823829 /* Pods-NilNetzwerk_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Pods-NilNetzwerk_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NilNetzwerk_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		93399A125B970830936493585944BD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
+				PRODUCT_NAME = NilNetzwerk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2D5DEF7F62E79A1936B720708110C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NilNetzwerk_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3BA629D7B6F5B48BD21F5419475C5E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29645E4D183C727F3E6F7104A17A82CE /* Pods-NilNetzwerk_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NilNetzwerk_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFE39D4B3405BF556E438D4D2AA1397A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3743FEE273C4732D46F00D2773BB1A /* NilNetzwerk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
+				PRODUCT_NAME = NilNetzwerk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686C7A5FFCE128E8C8F4151F2FEBA4EC /* Build configuration list for PBXNativeTarget "NilNetzwerk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE39D4B3405BF556E438D4D2AA1397A /* Debug */,
+				93399A125B970830936493585944BD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6759F0E99A67B9A87A3D35B7FA6B185 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0940C4B1B4F5EB5474C9BE3F889BA277 /* Debug */,
+				750E0E73BDF2852D9E3D35E6445B6882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC4EDD46DA2CF735F8FEFFC878FA41F1 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D5DEF7F62E79A1936B720708110C30 /* Debug */,
+				D3BA629D7B6F5B48BD21F5419475C5E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
