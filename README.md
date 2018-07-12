@@ -28,7 +28,20 @@ pod 'NilNetzwerk'
 
 ## Usage 
 
-  ### Making simple get request
+  [Making a simple get request](#making-a-simple-get-request)
+  
+  [Create a request](#create-a-request)
+  
+  [Create custom RequestGenerator](#create-custom-requestgenerator)
+  
+  [Create custom NetworkClient](#create-custom-networkclient)
+  
+  [Making asynchronous request](#making-asynchronous-request)
+  
+  [Making synchronous request](#making-synchronous-request) 
+
+  ### Making a simple get request
+  
 ```swift
 import NilNetzwerk
 
@@ -43,6 +56,164 @@ NilNetzwerk.shared.get(url: URL(string: "https://httpbin.org/get")!) { (result: 
 
 struct SimpleModel: Codable {}
 ```
+
+  ### Create a request 
+  
+You can create a request by implementing "ServiceEndpoint" protocol with any type (enum, struct, class).
+(enum is recommended)
+
+```swift
+import NilNetzwerk
+
+// An instance of the request generator which prepares the HTTP request.
+struct TestRequestGenerator: RequestGenerator {
+  func generateRequest(withMethod method: HTTPMethod) -> MutableRequest {
+    return request(withMethod: method) |> withJsonSupport
+  }
+}
+
+// Endpoints that you want to use.
+enum TestFetchEndPoint {
+  case testPost(name: String, job: String)
+}
+
+// Implementing ServiceEndpoint protocol
+extension TestFetchEndPoint: ServiceEndpoint {
+
+  // An instance of the request generator which prepares the HTTP request.
+  var requestGenerator: RequestGenerator {
+    return TestRequestGenerator()
+  }
+
+  // The parameters of the endpoint.
+  var parameters: Codable? {
+    switch self {
+    case .testPost(let name, let job):
+      return TestPostModel(name: name, job: job)
+    }
+  }
+
+  // The base url for the endpoint.
+  var baseURL: URL {
+    switch self {
+    case .testPost:
+      return URL(string: "https://reqres.in/api")!
+    }
+  }
+
+  // The required method.
+  var method: HTTPMethod {
+    switch self {
+    case .testPost:
+      return .POST
+    }
+  }
+
+  // The specific path of the endpoint.
+  var path: String {
+    switch self {
+    case .testPost:
+      return "/users"
+    }
+  }
+
+  // The query parameters which are added to the url.
+  var queryParameters: [String : String]? {
+    switch self {
+    case .testPost:
+      return nil
+    }
+  }
+  
+  // The parameters which are added to the header.
+  var headerParameters: [String : String]? {
+    switch self {
+    case .testPost:
+      return nil
+    }
+  }
+  
+}
+
+struct TestPostModel: Codable {
+  let name: String
+  let job: String
+}
+```
+
+  ### Create custom RequestGenerator
+  
+You can create custom RequestGenerator by implementing RequestGenerator protocol.
+(Json support, Basic auth)
+
+```swift 
+struct TestRequestGenerator: RequestGenerator {
+
+  func generateRequest(withMethod method: HTTPMethod) -> MutableRequest {
+    return request(withMethod: method) |> withJsonSupport |> withBasicAuth
+  }
+  
+  var authUserName: String? {
+    return "Auth UserName"
+  }
+  
+  var authPassword: String? {
+    return "Auth Password"
+  }
+ 
+}
+```
+
+  ### Create custom NetworkClient
+  
+You can use default network client by calling "NilNetzwerk.shared". However, if you want to create custom network client you can extend "NilNetzwerk" class then implement your own network client.
+
+```swift
+import NilNetzwerk
+
+class CustomNetworkClient: NilNetzwerk {
+
+  override class var shared: CustomNetworkClient {
+    return CustomNetworkClient()
+  }
+
+  override init() {
+    super.init()
+    enableLog = false
+  }
+
+}
+```
+
+  ### Making asynchronous request 
+
+```swift
+import NilNetzwerk
+
+let testRequest = Request(endpoint: TestFetchEndPoint.testPost(name: "Nil", job: "iOS"))
+NilNetzwerk.shared.executeRequest(request: testRequest) { (result: Result<TestPostModel>) in
+      switch result {
+      case .success(let response):
+        print(response)
+      case .failure(let error):
+        print(error)
+      }
+    }
+```
+
+  ### Making synchronous request 
+
+```swift
+import NilNetzwerk
+
+let testRequest = Request(endpoint: TestFetchEndPoint.testPost(name: "Nil", job: "iOS"))
+let result: Result<TestPostModel> = NilNetzwerk.shared.executeRequest(request: testRequest)
+switch result {
+case .success(let response):
+  print(response)
+case .failure(let error):
+  print(error)
+``` 
 
 ## Author
 
