@@ -38,14 +38,6 @@ pod 'NilNetzwerk'
 </p>
 </details>
 <p></p>
-<details><summary>Create NetworkClient</summary>
-<p>
- 
-  [Create custom NetworkClient](#create-custom-networkclient)
-  
-</p>
-</details>
-<p></p>
 
 <details><summary>Execute request</summary>
 <p>
@@ -58,7 +50,19 @@ pod 'NilNetzwerk'
   
 </p>
 </details>
-  
+<p></p>
+
+<details><summary>Advance usage</summary>
+<p>
+ 
+  [Create custom NetworkClient](#create-custom-networkclient)
+
+  [Adapter (intercept before execute request)](#adapter)
+ 
+  [Handle unauthorized (getting called if host return 401)](#handle-unauthorized)
+    
+</p>
+</details>
 
   ### Making a simple get request
   
@@ -184,27 +188,6 @@ struct TestRequestGenerator: RequestGenerator {
 }
 ```
 
-  ### Create custom NetworkClient
-  
-You can use default network client by calling "NilNetzwerk.shared". However, if you want to create custom network client you can extend "NilNetzwerk" class then implement your own network client.
-
-```swift
-import NilNetzwerk
-
-class CustomNetworkClient: NilNetzwerk {
-
-  override class var shared: CustomNetworkClient {
-    return CustomNetworkClient()
-  }
-
-  override init() {
-    super.init()
-    enableLog = false
-  }
-
-}
-```
-
   ### Making asynchronous request 
 
 ```swift
@@ -233,6 +216,64 @@ case .success(let response):
   print(response)
 case .failure(let error):
   print(error)
+``` 
+
+  ### Create custom NetworkClient
+  
+You can use default network client by calling "NilNetzwerk.shared". However, if you want to create custom network client you can extend "NilNetzwerk" class then implement your own network client.
+
+```swift
+import NilNetzwerk
+
+class CustomNetworkClient: NilNetzwerk {
+
+  override class var shared: CustomNetworkClient {
+    return CustomNetworkClient()
+  }
+
+  override init() {
+    super.init()
+    enableLog = false
+  }
+
+}
+```
+
+  #### Adapter 
+
+Intercept method before execute request.
+
+```swift
+import NilNetzwerk
+
+class CustomNetworkClient: NilNetzwerk {
+
+  // intercept method 
+  override func adapter(request: inout Request) {
+    
+  }
+
+}
+``` 
+
+  #### Handle Unauthorized 
+
+Every request that return 401 (unauthorized) will be enqueue to property "requestsToRetry" then this method will be executed.
+
+```swift
+import NilNetzwerk
+
+class CustomNetworkClient: NilNetzwerk {
+
+  // Handle unauthorized method 
+  override func handleUnauthorized(request: Request, completion: @escaping (Bool) -> Result<Error>?) {
+    // You can implement request, refresh token method here
+    
+    // This is a queue of unauthorized request, you can dequeue and execute request again.
+    let allRequestsToRetry = self.requestsToRetry
+  }
+
+}
 ``` 
 
 ## Author
