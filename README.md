@@ -28,17 +28,37 @@ pod 'NilNetzwerk'
 
 ## Usage 
 
-  [Making a simple get request](#making-a-simple-get-request)
-  
+<details><summary>Create request.</summary>
+<p>
+ 
   [Create a request](#create-a-request)
   
   [Create custom RequestGenerator](#create-custom-requestgenerator)
   
+</p>
+</details>
+<p></p>
+<details><summary>Create NetworkClient</summary>
+<p>
+ 
   [Create custom NetworkClient](#create-custom-networkclient)
   
+</p>
+</details>
+<p></p>
+
+<details><summary>Execute request</summary>
+<p>
+ 
+  [Making a simple get request](#making-a-simple-get-request)
+ 
   [Making asynchronous request](#making-asynchronous-request)
   
   [Making synchronous request](#making-synchronous-request) 
+  
+</p>
+</details>
+  
 
   ### Making a simple get request
   
