@@ -11,7 +11,7 @@ struct Constants {
   static let Accept: String           = "Accept"
   static let ContentType: String      = "Content-Type"
   static let JSONHeader: String       = "application/json; charset=utf-8"
-  static let XWwwForm: String       = "application/x-www-form-urlencoded; charset=utf-8"
+  static let XWwwForm: String         = "application/x-www-form-urlencoded; charset=utf-8"
   static let LogLevel: String         = "logLevel"
   static let ContentLength: String    = "Content-Length"
   static let BaseURL: String          = "baseURL"

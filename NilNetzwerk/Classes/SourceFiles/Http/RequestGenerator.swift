@@ -32,8 +32,11 @@ public protocol RequestGenerator {
   /// - Returns: A mutable request which can be changed afterwards.
   func generateRequest(withMethod method: HTTPMethod) -> MutableRequest
 
+
+  /// Auth username using for basic authen.
   var authUserName: String? { get }
 
+  /// Auth password using for basic authen.
   var authPassword: String? { get }
 
 }

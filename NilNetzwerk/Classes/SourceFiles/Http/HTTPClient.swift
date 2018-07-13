@@ -1,6 +1,7 @@
 import Foundation
 
 public protocol HTTPClientProtocol {
+
   /// Adapter method that run before execute any request.
   ///
   /// - Parameter request: The given url request.
@@ -32,9 +33,11 @@ public protocol HTTPClientProtocol {
 /// You can also use async requests with completion handler.
 open class NilNetzwerk: HTTPClientProtocol{
 
+  /// Singleton object of NilNetzwerk class.
   open class var shared: NilNetzwerk {
     return NilNetzwerk()
   }
+  /// Queue of unauthorized request.
   public var requestsToRetry: Queue<() -> Void> = Queue()
   public var enableLog: Bool = true
 
@@ -46,11 +49,10 @@ open class NilNetzwerk: HTTPClientProtocol{
     self.urlSession = urlSession
   }
 
-  /// Init method that creates default NSURLSession with no response handlers.
+  /// Init method that creates default NSURLSession with no cache.
   public init() {
     let configuration                           = URLSessionConfiguration.default
     configuration.requestCachePolicy            = .reloadIgnoringLocalAndRemoteCacheData
-    configuration.timeoutIntervalForRequest     = 30
     configuration.urlCache                      = nil
 
     self.urlSession = URLSession(configuration: configuration,
@@ -58,10 +60,6 @@ open class NilNetzwerk: HTTPClientProtocol{
                                  delegateQueue: nil)
   }
 
-  /// Extracts the credentials for a given url request.
-  ///
-  /// - Parameter request: The given url request.
-  /// - Returns: The ssl credentials for a given request, returns nil if no credentials were found.
   open func adapter(request: inout Request) {}
 
   open func handleUnauthorized(request: Request, completion: @escaping (Bool) -> Result<Error>?) {}
@@ -150,7 +148,6 @@ extension NilNetzwerk: HTTP {
   }
 
   private func removeFromPool(request: Request) {
-    //    requestsPool.removeAll(where: { $0 == request })
     if let index = self.requestsPool.index(of: request)  {
       self.requestsPool.remove(at: index)
     }
