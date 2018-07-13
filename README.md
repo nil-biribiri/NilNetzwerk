@@ -225,15 +225,23 @@ You can use default network client by calling "NilNetzwerk.shared". However, if 
 ```swift
 import NilNetzwerk
 
-class CustomNetworkClient: NilNetzwerk {
+class TestNetworkClient: NilNetzwerk {
 
-  override class var shared: CustomNetworkClient {
-    return CustomNetworkClient()
+  override class var shared: TestNetworkClient{
+    return TestNetworkClient()
   }
 
+  private let urlSession: URLSession = {
+    let configuration                           = URLSessionConfiguration.default
+    configuration.requestCachePolicy            = .reloadIgnoringLocalAndRemoteCacheData
+    configuration.timeoutIntervalForRequest     = 30
+    configuration.urlCache                      = nil
+    return URLSession(configuration: configuration)
+  }()
+
   override init() {
-    super.init()
-    enableLog = false
+    super.init(urlSession: urlSession)
+    enableLog = true
   }
 
 }
