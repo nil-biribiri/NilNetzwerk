@@ -14,8 +14,16 @@ class TestNetworkClient: NilNetzwerk {
     return TestNetworkClient()
   }
 
+  private let urlSession: URLSession = {
+    let configuration                           = URLSessionConfiguration.default
+    configuration.requestCachePolicy            = .reloadIgnoringLocalAndRemoteCacheData
+    configuration.timeoutIntervalForRequest     = 30
+    configuration.urlCache                      = nil
+    return URLSession(configuration: configuration)
+  }()
+
   override init() {
-    super.init()
+    super.init(urlSession: urlSession)
     enableLog = true
   }
 

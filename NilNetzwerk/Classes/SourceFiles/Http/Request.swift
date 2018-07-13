@@ -51,6 +51,14 @@ public struct Request: Equatable {
     updateURLEncode(mutableRequest: &mutableRequest)
   }
 
+  /// Initialize with request data explicitly.
+  ///
+  /// - Parameter url: Request URL.
+  /// - Parameter method: Request http method.
+  /// - Parameter parameters: Request parameters.
+  /// - Parameter queryParameters: Request query parameter.
+  /// - Parameter headerParameters: Request headers.
+  /// - Parameter requestGenerator: Request generator.
   public init(url: URL,
               method: HTTPMethod,
               parameters: Codable? = nil,
@@ -72,6 +80,7 @@ public struct Request: Equatable {
     updateURLEncode(mutableRequest: &mutableRequest)
   }
 
+  /// Initialize with get request with query parameters.
   public init(url: URL, method: HTTPMethod = .GET, queryParameters: [String: String] = [:]) {
     let requestGenerator = StandardRequestGenerator()
     self.init(url: url,
@@ -80,6 +89,7 @@ public struct Request: Equatable {
               requestGenerator: requestGenerator)
   }
 
+  /// Update request header fields.
   public mutating func updateHTTPHeaderFields(headerFields: [String: String]) {
     self.headerFields += headerFields
   }
