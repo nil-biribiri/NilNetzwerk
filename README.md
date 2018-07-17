@@ -7,6 +7,18 @@
 
 A super-lightweight network client library. Heavily inspired by Moya, Alamofire.
 
+  **What you can do:**
+  
+  - [x] Making synchronous, asynchronous request.
+  - [x] Making chain request.
+  - [x] Create custom network client.
+  - [x] Build request separately.
+  - [x] Intercept, mutate request before execute.
+  - [x] Handle unauthorized request (Refresh token).
+  - [x] Basic auth (Oauth).
+  - [x] Add JSON support.
+  - [x] Network logger.
+  
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
