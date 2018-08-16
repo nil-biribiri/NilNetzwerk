@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		08A422CEE0B66524DF16473EA1D0D426 /* NilNetzwerk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D592355561DAE4B05D6E394017FF5 /* NilNetzwerk-dummy.m */; };
 		150AA11AABF2B52B5C3B2B4F45507ABA /* NetworkTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB115C1AF254A7E4C2C2BB752F62323 /* NetworkTransform.swift */; };
-		155AC925171749F8FC987B40AC0820FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		1685F16C29F616AE48ABF0C895FD645A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A16A78E61C9D25E3CDA0D8465A058 /* Util.swift */; };
 		24D9CCCB6CFC71E3C46127C96D2C2642 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9FA41ED92CEAD0C4693773825ECEC /* HTTPClient.swift */; };
 		38A46063A3C72B5C67C2464DD9FAE8EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		4283592E4ABC5FA7D8D6D98E0CF3E82F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2F71002B6BDBB673F667F6FC3B9CF /* Utils.swift */; };
+		6902B1696372A96AFE23C9DB96CA2CDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		78426186EBF6649D412F2FF2E4CA785C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86730F3E1B0EA45DAE4F0A50E054A2 /* Errors.swift */; };
+		873E278645EFFC527F804C12857BC45F /* Pods-NilNetzwerk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */; };
 		87BEAF6FD32823618272233665D0C840 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A4253A4D31E7E320B38FCE009C04E /* Constants.swift */; };
 		8A3CBB48A11CF88A81F639171040A643 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCAAA907B9DC3CEE90188AE8B6C5FCC /* Serializable.swift */; };
-		90299DCB731EE441B86E8480D520573A /* Pods-NilNetzwerk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DA6032E7A1F683A077DB36CAAABCF /* Pods-NilNetzwerk_Tests-dummy.m */; };
 		926871C26EF5719BABC29D686C7CE09E /* DateStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDDCDD72526539F17D6C8ED9627E7CF /* DateStringUtils.swift */; };
 		A570A28135A20BBA5F0BCD22639D67A2 /* Pods-NilNetzwerk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE9D5E0F43F710ED7927D0A7AB15F2 /* Pods-NilNetzwerk_Example-dummy.m */; };
 		A5822E4D40DA149F51DCA4125D55A73C /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5D194C336ED9B6EB5D31B88D589E61 /* ServiceEndpoint.swift */; };
 		B16E7D0FB740A74D0FCF1D731D292170 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372A6FE333CF705EE9E44ECBA018AAE /* HTTP.swift */; };
-		B5001F76AEE0483E085154F5F57BA15C /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4E5A658BEB77B6DB66D5A1C2A56A77B /* NilNetzwerk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D5D676B2AEC67FC27420A52F36F34E /* NilNetzwerk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC6F9AD28FFF6B5DA3727C4469261071 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E22FDDFE2848AA2562CF156EE3212D /* Request.swift */; };
 		D78443C8E8B4E078DE347A15A5191C5D /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0410F8EA46C708370007620EE674769 /* NetworkQueue.swift */; };
+		D7AE5F310957A25EA61FF0BDA33FDE8B /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133C14EE88053692626512B98C667A60 /* Pods-NilNetzwerk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBCF4C69502B2D670BFA3B063D0FE99F /* DictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124741D11BCDD5F71F58118143919191 /* DictionaryUtils.swift */; };
 		DE70937902361C7B4A460725686EDE44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		E8C097FC9BCBE64BC88796F05AE0E990 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC4A84B172B7EB27E4A8E1754BB89A /* RequestGenerator.swift */; };
@@ -40,6 +40,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9F0B26B23790E7B80E8ECBB78B9AA9CF;
 			remoteInfo = NilNetzwerk;
+		};
+		53D1FA6111D6171AD743DF9E03DABC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 254166FA6C9CA9FE33B9897F9083DB75;
+			remoteInfo = "Pods-NilNetzwerk_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -96,14 +103,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		31DAB712DA074A008E1F33FB869E8E1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				155AC925171749F8FC987B40AC0820FF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49B6FC6EF7ECC6A8890A04329B10BB10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +116,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE70937902361C7B4A460725686EDE44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D557F6245AD161578D71A71E23AC739D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6902B1696372A96AFE23C9DB96CA2CDC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,19 +307,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71F6E480AB470B76638F2AA7AA9506BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AE5F310957A25EA61FF0BDA33FDE8B /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80435FE940028606EAA030BE469E2FC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4E5A658BEB77B6DB66D5A1C2A56A77B /* NilNetzwerk-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA631F09E9D948CCA974D64FA3E28EC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5001F76AEE0483E085154F5F57BA15C /* Pods-NilNetzwerk_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,23 +344,6 @@
 			productReference = FBD65B038FDA553BE682A07D22A90868 /* Pods_NilNetzwerk_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		455040917864AC2FD2CFF43D39659C33 /* Pods-NilNetzwerk_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BC4EDD46DA2CF735F8FEFFC878FA41F1 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Tests" */;
-			buildPhases = (
-				CD5FEFC2C11A38DE2CD8D58C54D7E0E7 /* Sources */,
-				31DAB712DA074A008E1F33FB869E8E1C /* Frameworks */,
-				AA631F09E9D948CCA974D64FA3E28EC1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-NilNetzwerk_Tests";
-			productName = "Pods-NilNetzwerk_Tests";
-			productReference = D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		9F0B26B23790E7B80E8ECBB78B9AA9CF /* NilNetzwerk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A003BE35B10A90F600AB86B604EBF8 /* Build configuration list for PBXNativeTarget "NilNetzwerk" */;
@@ -369,6 +359,24 @@
 			name = NilNetzwerk;
 			productName = NilNetzwerk;
 			productReference = D8FB12A4372D6DFF902B913ED0986AC9 /* NilNetzwerk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3A90AADED7FE0AA20FF4E4377966DA9 /* Pods-NilNetzwerk_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8649C95F9E8A5CD7125CA713B26B6F3B /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Tests" */;
+			buildPhases = (
+				F8ED735872B2200E63199B3BA18A405A /* Sources */,
+				D557F6245AD161578D71A71E23AC739D /* Frameworks */,
+				71F6E480AB470B76638F2AA7AA9506BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E926A3E27BA0BA4B6C260C41EA85E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-NilNetzwerk_Tests";
+			productName = "Pods-NilNetzwerk_Tests";
+			productReference = D51E571B71A4C280346807A32EB51AA1 /* Pods_NilNetzwerk_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -394,7 +402,7 @@
 			targets = (
 				9F0B26B23790E7B80E8ECBB78B9AA9CF /* NilNetzwerk */,
 				254166FA6C9CA9FE33B9897F9083DB75 /* Pods-NilNetzwerk_Example */,
-				455040917864AC2FD2CFF43D39659C33 /* Pods-NilNetzwerk_Tests */,
+				C3A90AADED7FE0AA20FF4E4377966DA9 /* Pods-NilNetzwerk_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -431,11 +439,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD5FEFC2C11A38DE2CD8D58C54D7E0E7 /* Sources */ = {
+		F8ED735872B2200E63199B3BA18A405A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90299DCB731EE441B86E8480D520573A /* Pods-NilNetzwerk_Tests-dummy.m in Sources */,
+				873E278645EFFC527F804C12857BC45F /* Pods-NilNetzwerk_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,13 +456,86 @@
 			target = 9F0B26B23790E7B80E8ECBB78B9AA9CF /* NilNetzwerk */;
 			targetProxy = 3F9F06D6F250FBB5A2F1A332B4983DCE /* PBXContainerItemProxy */;
 		};
+		39E926A3E27BA0BA4B6C260C41EA85E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NilNetzwerk_Example";
+			target = 254166FA6C9CA9FE33B9897F9083DB75 /* Pods-NilNetzwerk_Example */;
+			targetProxy = 53D1FA6111D6171AD743DF9E03DABC7A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0940C4B1B4F5EB5474C9BE3F889BA277 /* Debug */ = {
+		086A73019CA36A05E2C57F115586E0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE47E4F5D66449C8D1F9D464BA8A0D40 /* NilNetzwerk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
+				PRODUCT_MODULE_NAME = NilNetzwerk;
+				PRODUCT_NAME = NilNetzwerk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FEF8922D871F73F96E084BB5F86B91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		385F5509950770C5B349829DC3353CBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8B9B55568FC3DD5463C19238187501F /* Pods-NilNetzwerk_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -474,7 +555,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NilNetzwerk_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -485,7 +566,7 @@
 			};
 			name = Debug;
 		};
-		147C0F89C0361E41C52F04B6CCE27177 /* Debug */ = {
+		4B531522B89F2031BCB8143E151FB536 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE47E4F5D66449C8D1F9D464BA8A0D40 /* NilNetzwerk.xcconfig */;
 			buildSettings = {
@@ -504,6 +585,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
+				PRODUCT_MODULE_NAME = NilNetzwerk;
 				PRODUCT_NAME = NilNetzwerk;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -516,10 +598,11 @@
 			};
 			name = Debug;
 		};
-		3CA19FC0B6EB2DFC97CAE426A3EFC6C1 /* Release */ = {
+		4FE91DADDAA5100FD7FBD13F6884609D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE47E4F5D66449C8D1F9D464BA8A0D40 /* NilNetzwerk.xcconfig */;
+			baseConfigurationReference = 29645E4D183C727F3E6F7104A17A82CE /* Pods-NilNetzwerk_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -529,18 +612,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NilNetzwerk/NilNetzwerk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NilNetzwerk/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NilNetzwerk/NilNetzwerk.modulemap";
-				PRODUCT_NAME = NilNetzwerk;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -548,7 +632,7 @@
 			};
 			name = Release;
 		};
-		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -580,6 +664,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -604,48 +689,13 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		750E0E73BDF2852D9E3D35E6445B6882 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CC38DE82D6E87F72ECB5044F3823829 /* Pods-NilNetzwerk_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Pods-NilNetzwerk_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NilNetzwerk_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -677,6 +727,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -697,16 +748,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		A2D5DEF7F62E79A1936B720708110C30 /* Debug */ = {
+		EBC10077112891CCCB52EDDB4AC76FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D43D5122B5EDD6A44A015D27DE6F2F01 /* Pods-NilNetzwerk_Tests.debug.xcconfig */;
+			baseConfigurationReference = 0CC38DE82D6E87F72ECB5044F3823829 /* Pods-NilNetzwerk_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -716,51 +767,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Example/Pods-NilNetzwerk_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NilNetzwerk_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3BA629D7B6F5B48BD21F5419475C5E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29645E4D183C727F3E6F7104A17A82CE /* Pods-NilNetzwerk_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NilNetzwerk_Tests/Pods-NilNetzwerk_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NilNetzwerk_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -774,8 +794,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
-				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -783,8 +803,17 @@
 		44A003BE35B10A90F600AB86B604EBF8 /* Build configuration list for PBXNativeTarget "NilNetzwerk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				147C0F89C0361E41C52F04B6CCE27177 /* Debug */,
-				3CA19FC0B6EB2DFC97CAE426A3EFC6C1 /* Release */,
+				4B531522B89F2031BCB8143E151FB536 /* Debug */,
+				086A73019CA36A05E2C57F115586E0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8649C95F9E8A5CD7125CA713B26B6F3B /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF8922D871F73F96E084BB5F86B91B /* Debug */,
+				4FE91DADDAA5100FD7FBD13F6884609D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -792,17 +821,8 @@
 		B6759F0E99A67B9A87A3D35B7FA6B185 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0940C4B1B4F5EB5474C9BE3F889BA277 /* Debug */,
-				750E0E73BDF2852D9E3D35E6445B6882 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC4EDD46DA2CF735F8FEFFC878FA41F1 /* Build configuration list for PBXNativeTarget "Pods-NilNetzwerk_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A2D5DEF7F62E79A1936B720708110C30 /* Debug */,
-				D3BA629D7B6F5B48BD21F5419475C5E7 /* Release */,
+				385F5509950770C5B349829DC3353CBD /* Debug */,
+				EBC10077112891CCCB52EDDB4AC76FC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

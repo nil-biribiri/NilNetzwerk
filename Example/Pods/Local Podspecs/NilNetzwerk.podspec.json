@@ -1,19 +1,20 @@
 {
   "name": "NilNetzwerk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A super-lightweight network client library.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "A super-lightweight network client library. Heavily inspired by Moya, Alamofire. writing in Swift 3.0.",
   "homepage": "https://github.com/nil-biribiri/NilNetzwerk",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Nil-biribiri": "nilc.nolan@gmail.com"
+    "NilNilNil": "nilc.nolan@gmail.com"
   },
   "source": {
     "git": "https://github.com/nil-biribiri/NilNetzwerk.git",
-    "tag": "0.1.0"
+    "branch": "master",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
