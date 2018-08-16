@@ -1,16 +1,16 @@
 PODS:
-  - NilNetzwerk (0.1.0)
+  - NilNetzwerk (0.1.1)
 
 DEPENDENCIES:
   - NilNetzwerk (from `../`)
 
 EXTERNAL SOURCES:
   NilNetzwerk:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  NilNetzwerk: 426476664ce8c88bc42a140bc3bf0c6b263c4aae
+  NilNetzwerk: a3f5e74072907cf2030a3755412ff86af6811aa5
 
 PODFILE CHECKSUM: ab90309ecbdd22a8a2410683399fc0c837af8287
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

@@ -49,7 +49,20 @@ public enum Result<T> {
 
 /// Type representing response from the server.
 public struct Response<T> {
-  
+
+  /// public initializer
+  public init(statusCode: Int,
+              body: Data?,
+              bodyObject: T,
+              responseHeaders: [AnyHashable : Any]?,
+              url: URL?) {
+      self.statusCode         = statusCode
+      self.body               = body
+      self.bodyObject         = bodyObject
+      self.responseHeaders    = responseHeaders
+      self.url                = url
+  }
+
   /// The status code of the response.
   public let statusCode: Int
   
