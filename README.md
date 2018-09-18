@@ -7,6 +7,18 @@
 
 A super-lightweight network client library. Heavily inspired by Moya, Alamofire.
 
+  **What you can do:**
+  
+  - [x] Making synchronous, asynchronous request.
+  - [x] Making chain request.
+  - [x] Create custom network client.
+  - [x] Build request separately.
+  - [x] Intercept, mutate request before execute.
+  - [x] Handle unauthorized request (Refresh token).
+  - [x] Basic auth (Oauth).
+  - [x] Add JSON support.
+  - [x] Network logger.
+  
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -225,15 +237,23 @@ You can use default network client by calling "NilNetzwerk.shared". However, if 
 ```swift
 import NilNetzwerk
 
-class CustomNetworkClient: NilNetzwerk {
+class TestNetworkClient: NilNetzwerk {
 
-  override class var shared: CustomNetworkClient {
-    return CustomNetworkClient()
+  override class var shared: TestNetworkClient{
+    return TestNetworkClient()
   }
 
+  private let urlSession: URLSession = {
+    let configuration                           = URLSessionConfiguration.default
+    configuration.requestCachePolicy            = .reloadIgnoringLocalAndRemoteCacheData
+    configuration.timeoutIntervalForRequest     = 30
+    configuration.urlCache                      = nil
+    return URLSession(configuration: configuration)
+  }()
+
   override init() {
-    super.init()
-    enableLog = false
+    super.init(urlSession: urlSession)
+    enableLog = true
   }
 
 }
