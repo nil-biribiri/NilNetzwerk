@@ -34,9 +34,8 @@ public protocol HTTPClientProtocol {
 open class NilNetzwerk: HTTPClientProtocol{
 
   /// Singleton object of NilNetzwerk class.
-  open class var shared: NilNetzwerk {
-    return NilNetzwerk()
-  }
+  public static let sharedInstance: NilNetzwerk = NilNetzwerk()
+
   /// Queue of unauthorized request.
   public var requestsToRetry: Queue<() -> Void> = Queue()
   public var enableLog: Bool = true
@@ -126,9 +125,9 @@ extension NilNetzwerk: HTTP {
     requestsPool.append(mutableRequest)
     enableLog ? Logger.log(message: "Request: \(mutableRequest)", event: .d) : nil
 
-    urlSession.dataTask(with: urlRequest) { (data, urlResponse, error) in
-      self.removeFromPool(request: request)
-      let result: Result<_Result>? = self.handleResponse(withData: data,
+    urlSession.dataTask(with: urlRequest) { [weak self] (data, urlResponse, error) in
+      self?.removeFromPool(request: request)
+      let result: Result<_Result>? = self?.handleResponse(withData: data,
                                                          urlResponse: urlResponse,
                                                          error: error,
                                                          request: request,
