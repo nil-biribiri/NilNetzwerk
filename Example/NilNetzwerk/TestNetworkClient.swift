@@ -10,9 +10,7 @@ import Foundation
 import NilNetzwerk
 
 class TestNetworkClient: NilNetzwerk {
-  override class var shared: TestNetworkClient{
-    return TestNetworkClient()
-  }
+  static let shared = TestNetworkClient()
 
   private let urlSession: URLSession = {
     let configuration                           = URLSessionConfiguration.default
