@@ -10,7 +10,7 @@ A super-lightweight network client library. Heavily inspired by Moya, Alamofire.
   **What you can do:**
   
   - [x] Making synchronous, asynchronous request.
-  - [x] Making chain request.
+  - [x] Making chain synchronous request in background thread.
   - [x] Create custom network client.
   - [x] Build request separately.
   - [x] Intercept, mutate request before execute.
@@ -60,6 +60,8 @@ pod 'NilNetzwerk'
   
   [Making synchronous request](#making-synchronous-request) 
   
+  [Making chain synchronous request in background thread](#making-chain-synchronous-request-in-background-thread) 
+  
 </p>
 </details>
 <p></p>
@@ -81,7 +83,7 @@ pod 'NilNetzwerk'
 ```swift
 import NilNetzwerk
 
-NilNetzwerk.shared.get(url: URL(string: "https://httpbin.org/get")!) { (result: Result<SimpleModel>) in
+NilNetzwerk.sharedInstance.get(url: URL(string: "https://httpbin.org/get")!) { (result: Result<SimpleModel>) in
       switch result {
       case .success(let response):
         print(response)
@@ -206,7 +208,7 @@ struct TestRequestGenerator: RequestGenerator {
 import NilNetzwerk
 
 let testRequest = Request(endpoint: TestFetchEndPoint.testPost(name: "Nil", job: "iOS"))
-NilNetzwerk.shared.executeRequest(request: testRequest) { (result: Result<TestPostModel>) in
+NilNetzwerk.sharedInstance.executeRequest(request: testRequest) { (result: Result<TestPostModel>) in
       switch result {
       case .success(let response):
         print(response)
@@ -222,7 +224,7 @@ NilNetzwerk.shared.executeRequest(request: testRequest) { (result: Result<TestPo
 import NilNetzwerk
 
 let testRequest = Request(endpoint: TestFetchEndPoint.testPost(name: "Nil", job: "iOS"))
-let result: Result<TestPostModel> = NilNetzwerk.shared.executeRequest(request: testRequest)
+let result: Result<TestPostModel> = NilNetzwerk.sharedInstance.executeRequest(request: testRequest)
 switch result {
 case .success(let response):
   print(response)
@@ -230,18 +232,30 @@ case .failure(let error):
   print(error)
 ``` 
 
+  ### Making chain synchronous request in background thread
+
+```swift
+import NilNetzwerk
+
+let testRequest = Request(endpoint: TestFetchEndPoint.testPost(name: "Nil", job: "iOS"))
+DispatchQueue.global(qos: .background).async {
+  let result: Result<TestPostModel> =  NilNetzwerk.sharedInstance.executeRequest(request: request)
+  print("TestNetworkClient: \(result.isSuccess)")
+  let result2: Result<TestPostModel> =  NilNetzwerk.sharedInstance.executeRequest(request: request)
+  print("TestNetworkClient: \(result.isSuccess) & \(result2.isSuccess)")
+}
+``` 
+
+
   ### Create custom NetworkClient
   
-You can use default network client by calling "NilNetzwerk.shared". However, if you want to create custom network client you can extend "NilNetzwerk" class then implement your own network client.
+You can use default network client by calling "NilNetzwerk.sharedInstance". However, if you want to create custom network client you can extend "NilNetzwerk" class then implement your own network client.
 
 ```swift
 import NilNetzwerk
 
 class TestNetworkClient: NilNetzwerk {
-
-  override class var shared: TestNetworkClient{
-    return TestNetworkClient()
-  }
+  static let shared = TestNetworkClient()
 
   private let urlSession: URLSession = {
     let configuration                           = URLSessionConfiguration.default
